@@ -2,8 +2,9 @@ import type { Metadata, Viewport } from "next";
 
 import "./globals.scss";
 import { kodchasan } from "./font";
-import Navbar from "@/components/shared/Navbar";
+
 import Footer from "@/components/shared/Footer";
+import Header from "@/components/shared/Header";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -61,7 +62,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={kodchasan.className}>
         <div>
-          <Navbar />
+          <Header />
 
           <main>{children}</main>
 

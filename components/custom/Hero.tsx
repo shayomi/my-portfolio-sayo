@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 const Hero = () => {
   return (
     <section className=" hero-banner-bg  min-h-[500px] h-[50vh] sm:min-h-[600px] xl:min-h-[700px] sm:h-[70vh] w-full ">
-      <div className="container flex items-center flex-col justify-center mt-24 ">
+      <div className="container flex items-center flex-col justify-center mt-48 ">
         <Image
           alt="hero-image"
           src={hero2}

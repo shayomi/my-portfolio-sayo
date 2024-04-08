@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "../ui/typography";
 import Portfolio from "./Portfolio";
+import About from "./About";
 
 const Services = () => {
   return (
@@ -106,6 +107,7 @@ const Services = () => {
         </div>
       </div>
       <Portfolio />
+      <About />
     </section>
   );
 };
