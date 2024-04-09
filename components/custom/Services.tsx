@@ -8,6 +8,8 @@ const Services = () => {
     <section className="service-banner-bg">
       <div className="mt-20 px-12">
         <h1 className="background-text">SERVICES</h1>
+
+        {/* for web development */}
         <div className="border-t-[1px] border-background mt-12 flex flex-col md:flex-nowrap md:flex-row">
           <div className=" basis-full sm:basis-6/12 py-12 space-y-6 ">
             <h1 className="text-background text-[24px] sm:text-[36px] md::text-[48px] ">
@@ -54,7 +56,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* UI UX */}
+        {/*for  UI UX */}
         <div className="border-t-[1px] border-background mt-24 flex flex-col md:flex-nowrap md:flex-row">
           <div className=" basis-full sm:basis-6/12 py-12 space-y-6 ">
             <h1 className="text-background text-[24px] sm:text-[36px] md::text-[48px] ">

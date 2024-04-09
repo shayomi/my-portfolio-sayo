@@ -163,3 +163,18 @@ export const reviewData = [
       "Sayo Adegoroye is a good person to work with, He always delivers his jobs to the best of his ability ",
   },
 ];
+
+export const ContactData = [
+  {
+    icon: "/images/call.svg",
+    title: "Call me at",
+    description: "+2349034970469",
+    link: "https://wa.link/37lp8a",
+  },
+  {
+    icon: "/images/mail.svg",
+    title: "Send me an email",
+    description: "adegoroyesayotosin@gmail.com",
+    link: "https://mailto:adegoroyesayotosin@gmail.com",
+  },
+];

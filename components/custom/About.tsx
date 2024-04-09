@@ -8,7 +8,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <div className="mt-24 relative px-12 text-center">
+      <div className="mt-24 relative px-4 sm:px-12 text-center">
         <div className="absolute inset-0 opacity-25 z-0"></div>{" "}
         {/* Semi-transparent background */}
         <h1 className="background-text relative z-10">ABOUT ME</h1>
@@ -45,7 +45,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className=" flex justify-end mt-[-12px]  w-[90%] px-12 mx-auto">
+      <div className=" flex justify-end mt-[-12px] w-full sm:w-[90%] px-12 mx-auto pb-24">
         <Typography variant="p" className="text-background ">
           Throughout my career, I&apos;ve collaborated with leading
           organizations like Techclout Africa, Run Technology, Nexapluxe, and
