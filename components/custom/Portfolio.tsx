@@ -48,8 +48,6 @@ const Portfolio = () => {
                 <img
                   alt="portfolio-image"
                   src={portfolio.icon}
-                  width={800}
-                  height={800}
                   className="object-cover w-full h-full mx-auto"
                 />
               </div>
