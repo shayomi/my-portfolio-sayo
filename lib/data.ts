@@ -42,7 +42,7 @@ export const heroData = [
 
 export const portfolioData = [
   {
-    icon: "/images/eventspaces.png",
+    icon: "/public/images/eventspaces.png",
     title: "EventSpace ",
     tags: "Social App",
     website: "http://eventspaces.vercel.app",
