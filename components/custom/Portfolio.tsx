@@ -45,7 +45,7 @@ const Portfolio = () => {
           <div key={index} className="">
             <Link href={portfolio.website}>
               <div className="relative overflow-hidden ">
-                <Image
+                <img
                   alt="portfolio-image"
                   src={portfolio.icon}
                   width={800}
