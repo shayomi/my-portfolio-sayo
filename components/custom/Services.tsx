@@ -75,11 +75,11 @@ const Services = () => {
           </div>
           <div className="basis-full sm:basis-6/12 py-8">
             <Typography variant="p" className="text-background">
-              "Unlock your digital potential with my expert web development
+              Unlock your digital potential with my expert web development
               services. From sleek designs to seamless functionality, I
               specialize in crafting custom solutions tailored to your needs.
               Trust me to elevate your online presence and captivate your
-              audience. Let&apos;s build your digital masterpiece together."
+              audience. Let&apos;s build your digital masterpiece together.
             </Typography>
 
             <ul className="block list-disc text-background  mt-8 space-y-5">
@@ -125,13 +125,13 @@ const Services = () => {
           </div>
           <div className="basis-full sm:basis-6/12 py-8">
             <Typography variant="p" className="text-background">
-              "Experience the power of our top-notch UI/UX design services,
+              Experience the power of our top-notch UI/UX design services,
               unlocking your digital potential. From elegant interfaces to
               seamless user journeys, we specialize in tailoring custom
               solutions to your specifications. Entrust us to elevate your
               online presence, captivating your audience with captivating
               design. Let&apos;s collaborate on crafting your digital
-              masterpiece."
+              masterpiece.
             </Typography>
 
             <ul className="block list-disc text-background  mt-8 space-y-5">
