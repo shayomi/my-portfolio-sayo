@@ -63,7 +63,7 @@ export const portfolioData = [
     github: "https://github.com/Savetown/savetown-website-fe",
   },
   {
-    icon: "/images/accelerate-africa.png",
+    icon: "/images/accelerate-africa.PNG",
     title: "Accelerate Africa ",
     tags: "Information App",
     website: "http://acceler8.africa",
