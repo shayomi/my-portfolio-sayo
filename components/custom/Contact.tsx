@@ -25,6 +25,7 @@ const Contact = () => {
 
   return (
     <section
+      id="contact"
       className="mt-24 px-6 sm:px-12 mb-24"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

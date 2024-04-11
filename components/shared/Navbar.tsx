@@ -1,6 +1,7 @@
 import React from "react";
 //data import
 import { navData } from "@/lib/data";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -9,12 +10,12 @@ const Nav = () => {
         {navData.map((item, index) => {
           return (
             <li key={index}>
-              <a
+              <Link
                 className="text-xl capitalize text-black italic hover:text-default transition-all duration-300"
-                href={item.name}
+                href={item.href}
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           );
         })}

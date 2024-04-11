@@ -1,16 +1,59 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { Typography } from "../ui/typography";
 import Portfolio from "./Portfolio";
 import About from "./About";
+import { motion, useAnimation } from "framer-motion";
 
 const Services = () => {
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const div1 = document.getElementById("div1");
+    const div2 = document.getElementById("div2");
+
+    if (div1 && div2) {
+      const div1Top = div1.getBoundingClientRect().top;
+      const div2Top = div2.getBoundingClientRect().top;
+
+      if (div1Top <= windowHeight * 0.2) {
+        controls1.start({ y: 0 });
+      } else {
+        controls1.start({ y: -scrollTop * 0.5 }); // Adjust the speed of scrolling
+      }
+
+      if (div2Top <= windowHeight * 0.3) {
+        controls2.start({ opacity: 0 });
+      } else {
+        controls2.start({ opacity: 1 });
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="service-banner-bg">
+    <section className="service-banner-bg" id="services">
       <div className="mt-20 px-12">
         <h1 className="background-text">SERVICES</h1>
 
         {/* for web development */}
-        <div className="border-t-[1px] border-background mt-12 flex flex-col md:flex-nowrap md:flex-row">
+        <motion.div
+          id="div1"
+          className="border-t-[1px] border-background mt-12 flex flex-col md:flex-nowrap md:flex-row"
+        >
           <div className=" basis-full sm:basis-6/12 py-12 space-y-6 ">
             <h1 className="text-background text-[24px] sm:text-[36px] md::text-[48px] ">
               WEB DEVELOPMENT
@@ -54,10 +97,13 @@ const Services = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
 
         {/*for  UI UX */}
-        <div className="border-t-[1px] border-background mt-24 flex flex-col md:flex-nowrap md:flex-row">
+        <motion.div
+          id="div2"
+          className="border-t-[1px] border-background mt-24 flex flex-col md:flex-nowrap md:flex-row"
+        >
           <div className=" basis-full sm:basis-6/12 py-12 space-y-6 ">
             <h1 className="text-background text-[24px] sm:text-[36px] md::text-[48px] ">
               UIUX Designs
@@ -106,7 +152,7 @@ const Services = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
       <Portfolio />
       <About />

@@ -11,7 +11,7 @@ import { Typography } from "../ui/typography";
 
 const Reviews = () => {
   return (
-    <section id="testimonials" className="mt-24 px-2 sm:px-12">
+    <section id="reviews" className="mt-24 px-2 sm:px-12">
       <h1 className="background-text text-foreground opacity-15">REVIEWS</h1>
       <Typography variant="h2" className="text-start mt-6">
         {" "}

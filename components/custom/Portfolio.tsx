@@ -28,7 +28,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="container mt-24 mx-auto px-6 md:px-24">
+    <div className="container mt-24 mx-auto px-6 md:px-24" id="portfolio">
       <h1 className="background-text">MY WORKS</h1>
       <Typography variant="h3" className="text-background mt-12 text-start">
         Selected Works

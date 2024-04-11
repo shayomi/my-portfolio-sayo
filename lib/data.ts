@@ -1,10 +1,11 @@
 import { IconType } from "react-icons";
 import {
-  FaYoutube,
-  FaFacebookF,
+  FaGithub,
+  FaBehance,
   FaInstagram,
-  FaPinterestP,
+  FaLinkedinIn,
   FaDiscord,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 // Define a type for each social media icon object
@@ -14,11 +15,17 @@ interface SocialMedia {
 }
 
 export const socialData: SocialMedia[] = [
-  { href: "/", icon: FaYoutube },
-  { href: "/", icon: FaFacebookF },
-  { href: "/", icon: FaInstagram },
-  { href: "/", icon: FaPinterestP },
-  { href: "/", icon: FaDiscord },
+  { href: "https://wa.link/37lp8a", icon: FaWhatsapp },
+  { href: "https://github.com/shayomi", icon: FaGithub },
+  {
+    href: "https://www.instagram.com/shayomiiii_designs?igsh=MWI4djBwdWo3MG1pdw%3D%3D&utm_source=qr",
+    icon: FaInstagram,
+  },
+  { href: "https://www.behance.net/shayomidesigns", icon: FaBehance },
+  {
+    href: "https://www.linkedin.com/in/sayo-adegoroye-41b28064?",
+    icon: FaLinkedinIn,
+  },
 ];
 
 export const heroData = [
@@ -45,36 +52,36 @@ export const portfolioData = [
     icon: "/images/genteeecos.png",
     title: "Gentee Cosmestics ",
     tags: "Ecommerce",
-    website: "http://eventspaces.vercel.app",
-    github: "https://github.com/shayomi/Eventspace",
+    website: "https://genteecosmestics.vercel.app",
+    github: "https://github.com/shayomi/makeup",
   },
   {
     icon: "/images/savetown.png",
     title: "Savetown ",
     tags: "Fintech",
-    website: "http://eventspaces.vercel.app",
-    github: "https://github.com/shayomi/Eventspace",
+    website: "https://savetown.com",
+    github: "https://github.com/Savetown/savetown-website-fe",
   },
   {
     icon: "/images/accelerate-africa.png",
     title: "Accelerate Africa ",
     tags: "Information App",
-    website: "http://eventspaces.vercel.app",
-    github: "https://github.com/shayomi/Eventspace",
+    website: "http://acceler8.africa",
+    github: "https://github.com/shayomi/accelerate-website-develop",
   },
   {
     icon: "/images/capitalstatefarm.png",
     title: "Capital State Farm ",
     tags: "Information App",
-    website: "http://eventspaces.vercel.app",
-    github: "https://github.com/shayomi/Eventspace",
+    website: "https://capitalstatefarm.com",
+    github: "https://github.com/shayomi/capital-state-farm",
   },
   {
     icon: "/images/spinbet.png",
     title: "Spinbet",
     tags: "Betting App",
-    website: "http://eventspaces.vercel.app",
-    github: "https://github.com/shayomi/Eventspace",
+    website: "https://spinzbet.web.app/",
+    github: "https://github.com/shayomi/Spinbet",
   },
 ];
 
@@ -130,11 +137,11 @@ export const UIUXData = [
 
 export const navData = [
   { href: "/", name: "Home" },
-  { href: "/", name: "Service" },
-  { href: "/", name: "Portfolio" },
-  { href: "/", name: "About" },
-  { href: "/", name: "Reviews" },
-  { href: "/", name: "Contact" },
+  { href: "#services", name: "Service" },
+  { href: "#portfolio", name: "Portfolio" },
+  { href: "#about", name: "About" },
+  { href: "#reviews", name: "Reviews" },
+  { href: "#contact", name: "Contact" },
 ];
 
 export const reviewData = [
@@ -176,5 +183,29 @@ export const ContactData = [
     title: "Send me an email",
     description: "adegoroyesayotosin@gmail.com",
     link: "https://mailto:adegoroyesayotosin@gmail.com",
+  },
+];
+
+export const Footercontactdata = [
+  {
+    icon: "/images/github.svg",
+    website: "https://github.com/shayomi",
+  },
+  {
+    icon: "/images/behance.svg",
+    website: "https://www.behance.net/shayomidesigns",
+  },
+  {
+    icon: "/images/Ig.svg",
+    website:
+      "https://www.instagram.com/shayomiiii_designs?igsh=MWI4djBwdWo3MG1pdw%3D%3D&utm_source=qr",
+  },
+  {
+    icon: "/images/linkedin.svg",
+    website: "https://www.linkedin.com/in/sayo-adegoroye-41b28064?",
+  },
+  {
+    icon: "/images/whatsapp.svg",
+    website: "https://wa.link/37lp8a",
   },
 ];

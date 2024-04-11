@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Typography } from "../ui/typography";
 import { heroData } from "@/lib/data";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -36,9 +37,11 @@ const Hero = () => {
           );
         })}
       </div>
-      <Button variant="default" className="mt-12 flex mx-auto">
-        Chat ?
-      </Button>
+      <Link href="#contact">
+        <Button variant="default" className="mt-12 flex mx-auto">
+          Let&apos;s talk
+        </Button>
+      </Link>
     </section>
   );
 };

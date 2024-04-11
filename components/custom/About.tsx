@@ -8,7 +8,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <div className="mt-24 relative px-4 sm:px-12 text-center">
+      <div className="mt-24 relative px-4 sm:px-12 text-center" id="about">
         <div className="absolute inset-0 opacity-25 z-0"></div>{" "}
         {/* Semi-transparent background */}
         <h1 className="background-text relative z-10">ABOUT ME</h1>
