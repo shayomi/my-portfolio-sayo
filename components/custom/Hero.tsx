@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../../public/Images/hero-img.svg";
-import hero2 from "../../public/Images/sayomi.png";
-import hero3 from "../../public/Images/sayo-sm.png";
+import hero2 from "../../public/images/sayomi.png";
+import hero3 from "../../public/images/sayo-sm.png";
 import Image from "next/image";
 import { Typography } from "../ui/typography";
 import { heroData } from "@/lib/data";

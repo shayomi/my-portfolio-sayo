@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Typography } from "../ui/typography";
-import about from "../../public/Images/about-img.png";
+import about from "../../public/images/about-img.png";
 import Image from "next/image";
 
 const About = () => {

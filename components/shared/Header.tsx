@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Nav from "./Navbar";
 import Socials from "./Socials";
 // Logo import
-import logo from "../../public/Images/logos.png";
+import logo from "../../public/images/logos.png";
 // Motion import
 import { motion } from "framer-motion";
 // Variant import
