@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className=" hero-banner-bg  min-h-[500px] h-[50vh] sm:min-h-[600px] xl:min-h-[700px] sm:h-[70vh] w-full ">
+    <section className=" hero-banner-bg  min-h-[500px] h-[70vh] sm:min-h-[600px] xl:min-h-[700px] sm:h-[70vh] w-full ">
       <div className="container flex items-center flex-col justify-center mt-48 ">
         <Image
           alt="hero-image"
@@ -38,7 +38,7 @@ const Hero = () => {
         })}
       </div>
       <Link href="#contact">
-        <Button variant="default" className="mt-12 flex mx-auto">
+        <Button variant="default" className="mt-12 flex mx-auto mb-12">
           Let&apos;s talk
         </Button>
       </Link>
