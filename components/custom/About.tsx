@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <motion.div
-        className="mt-24 relative px-4 sm:px-12 text-start"
+        className="mt-24 relative px-4 sm:px-12 text-center"
         id="about"
       >
         <div className="absolute inset-0 opacity-25 z-0"></div>{" "}
