@@ -8,16 +8,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const Services = () => {
   const { scrollY } = useScroll();
-  const yText = useTransform(scrollY, [500, 300, 200, 0], [0, 50, 50, 300]);
 
   return (
     <motion.section className="service-banner-bg" id="services">
-      <div className="mt-20 px-12">
+      <div className="mt-20 px-6 sm:px-12">
         <h1 className="background-text">SERVICES</h1>
 
         {/* for web development */}
         <motion.div
-          style={{ y: yText }}
           id="div1"
           className="border-t-[1px] border-background mt-12 flex flex-col md:flex-nowrap md:flex-row"
         >

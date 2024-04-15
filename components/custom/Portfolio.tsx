@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { portfolioData } from "@/lib/data";
 import Image from "next/image";
 import { Typography } from "../ui/typography";
@@ -8,6 +8,9 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { UIUXData } from "@/lib/data";
 import PortfolioTabs from "./Portfoliotab";
+import { motion } from "framer-motion";
+import { fadeIn3 } from "../shared/Variant";
+import { transition1 } from "../shared/Transition";
 
 interface PortfolioItem {
   icon: string;
@@ -18,6 +21,16 @@ interface PortfolioItem {
 }
 
 const Portfolio = () => {
+  const [animateExit, setAnimateExit] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAnimateExit(true);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   const [selectedTab, setSelectedTab] = useState<string>("website");
   const [portfolioDatas, setPortfolioData] =
     useState<PortfolioItem[]>(portfolioData);
@@ -28,7 +41,10 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="container mt-24 mx-auto px-6 md:px-24" id="portfolio">
+    <motion.div
+      className="container mt-24 mx-auto px-6 md:px-24"
+      id="portfolio"
+    >
       <h1 className="background-text">MY WORKS</h1>
       <Typography variant="h3" className="text-background mt-12 text-start">
         Selected Works
@@ -40,9 +56,18 @@ const Portfolio = () => {
           portfolio={{ website: portfolioData, UIUX: UIUXData }}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {portfolioDatas.map((portfolio: PortfolioItem, index: number) => (
-          <div key={index} className="">
+          <motion.div
+            variants={fadeIn3("up", "tween", index * 0.2, 0.8)}
+            initial="hidden"
+            whileInView="show"
+            animate={animateExit ? "show" : "exit"}
+            whileHover={{ scale: 1.05 }}
+            transition={transition1}
+            key={index}
+            className=""
+          >
             <Link href={portfolio.website}>
               <div className="relative overflow-hidden ">
                 <img
@@ -70,10 +95,10 @@ const Portfolio = () => {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
