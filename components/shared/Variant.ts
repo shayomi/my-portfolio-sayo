@@ -14,7 +14,79 @@ export const fadeIn = (
   return {
     hidden: {
       x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
-      y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
+      y: direction === "up" ? 10 : direction === "down" ? -10 : 0,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: type,
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+    },
+  };
+};
+
+export const fadeIn2 = (
+  direction: AnimationParams["direction"],
+  type: string,
+  delay: number,
+  duration: number
+) => {
+  return {
+    hidden: {
+      x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
+      y: direction === "up" ? 100 : direction === "down" ? -10 : 0,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      scale: [1, 1, 1, 1, 1],
+      transition: {
+        type: type,
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+      borderRadius: ["0%", "0%", "20%", "30%", "50%"],
+    },
+    exit: {
+      // Define exit animation variant
+      x: 0,
+      y: "-200%",
+      opacity: 1,
+      scale: [1, 2, 2, 1, 1],
+      borderRadius: ["0%", "0%", "20%", "30%", "50%"],
+      transition: {
+        type: type,
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+        borderRadius: {
+          values: ["20%", "20%", "50%", "50%", "50%"],
+          delay: delay,
+        },
+      }, // You can adjust the duration as per your preference
+    },
+  };
+};
+
+export const fadeIn3 = (
+  direction: AnimationParams["direction"],
+  type: string,
+  delay: number,
+  duration: number
+) => {
+  return {
+    hidden: {
+      x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
+      y: direction === "up" ? 100 : direction === "down" ? -10 : -100,
       opacity: 0,
     },
     show: {

@@ -4,53 +4,21 @@ import React, { useEffect } from "react";
 import { Typography } from "../ui/typography";
 import Portfolio from "./Portfolio";
 import About from "./About";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Services = () => {
-  const controls1 = useAnimation();
-  const controls2 = useAnimation();
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const div1 = document.getElementById("div1");
-    const div2 = document.getElementById("div2");
-
-    if (div1 && div2) {
-      const div1Top = div1.getBoundingClientRect().top;
-      const div2Top = div2.getBoundingClientRect().top;
-
-      if (div1Top <= windowHeight * 0.2) {
-        controls1.start({ y: 0 });
-      } else {
-        controls1.start({ y: -scrollTop * 0.5 }); // Adjust the speed of scrolling
-      }
-
-      if (div2Top <= windowHeight * 0.3) {
-        controls2.start({ opacity: 0 });
-      } else {
-        controls2.start({ opacity: 1 });
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { scrollY } = useScroll();
+  const yText = useTransform(scrollY, [500, 300, 200, 0], [0, 50, 50, 300]);
+  const ySecondDiv = useTransform(scrollY, [0, 200], [0, -200]);
 
   return (
-    <section className="service-banner-bg" id="services">
+    <motion.section className="service-banner-bg" id="services">
       <div className="mt-20 px-12">
         <h1 className="background-text">SERVICES</h1>
 
         {/* for web development */}
         <motion.div
+          style={{ y: yText }}
           id="div1"
           className="border-t-[1px] border-background mt-12 flex flex-col md:flex-nowrap md:flex-row"
         >
@@ -101,6 +69,7 @@ const Services = () => {
 
         {/*for  UI UX */}
         <motion.div
+          style={{ y: ySecondDiv }}
           id="div2"
           className="border-t-[1px] border-background mt-24 flex flex-col md:flex-nowrap md:flex-row"
         >
@@ -156,7 +125,7 @@ const Services = () => {
       </div>
       <Portfolio />
       <About />
-    </section>
+    </motion.section>
   );
 };
 
