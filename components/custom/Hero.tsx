@@ -28,7 +28,7 @@ const Hero = () => {
   const yImage = useTransform(scrollY, [0, 200], [1, 0.5]);
   const opacityImage = useTransform(
     scrollY,
-    [0, 100, 150, 200],
+    [0, 150, 250, 300],
     [1, 0.5, 0.3, 0]
   );
 
@@ -37,7 +37,7 @@ const Hero = () => {
       <Intro />
       <motion.section className=" hero-banner-bg  min-h-[500px] h-[50vh] sm:min-h-[600px] xl:min-h-[700px] sm:h-[70vh] w-full absolute top-0 z-10 ">
         <motion.div style={{ y: yImage, opacity: opacityImage }}>
-          <motion.div className="container flex items-center flex-col justify-center mt-56 ">
+          <motion.div className="container flex items-center flex-col justify-center mt-[20rem] sm:mt-56 ">
             <motion.img
               variants={fadeIn3("up", "fade", 4.2, 1.2)}
               initial="hidden"

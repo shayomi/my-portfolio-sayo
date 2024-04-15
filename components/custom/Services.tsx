@@ -9,7 +9,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Services = () => {
   const { scrollY } = useScroll();
   const yText = useTransform(scrollY, [500, 300, 200, 0], [0, 50, 50, 300]);
-  const ySecondDiv = useTransform(scrollY, [0, 200], [0, -200]);
 
   return (
     <motion.section className="service-banner-bg" id="services">
@@ -69,7 +68,6 @@ const Services = () => {
 
         {/*for  UI UX */}
         <motion.div
-          style={{ y: ySecondDiv }}
           id="div2"
           className="border-t-[1px] border-background mt-24 flex flex-col md:flex-nowrap md:flex-row"
         >
