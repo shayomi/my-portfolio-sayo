@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Typography } from "../ui/typography";
 import about from "../../public/images/about-img.png";
 import Image from "next/image";
@@ -9,19 +9,10 @@ import { fadeIn3 } from "../shared/Variant";
 import { transition1 } from "../shared/Transition";
 
 const About = () => {
-  const [animateExit, setAnimateExit] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAnimateExit(true);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
-  }, []);
   return (
     <>
       <motion.div
-        className="mt-24 relative px-4 sm:px-12 text-center"
+        className="mt-24 relative px-4 sm:px-12 text-start"
         id="about"
       >
         <div className="absolute inset-0 opacity-25 z-0"></div>{" "}
@@ -38,7 +29,7 @@ const About = () => {
             variants={fadeIn3("up", "tween", 0.4, 0.8)}
             initial="hidden"
             whileInView="show"
-            animate={animateExit ? "show" : "exit"}
+            exit="show"
             className="text-background text-[38px] sm:text-[56px] md:text-[68px] "
           >
             ABOUT ME
@@ -48,7 +39,7 @@ const About = () => {
               variants={fadeIn3("up", "tween", 0.6, 0.8)}
               initial="hidden"
               whileInView="show"
-              animate={animateExit ? "show" : "exit"}
+              exit="show"
               className="text-background text-[38px] sm:text-[56px] md:text-[68px]  "
             >
               ABOUT ME
@@ -57,7 +48,7 @@ const About = () => {
               variants={fadeIn3("up", "tween", 0.8, 0.8)}
               initial="hidden"
               whileInView="show"
-              animate={animateExit ? "show" : "exit"}
+              exit="show"
               className="text-background text-[38px] sm:text-[56px] md:text-[68px] opacity-35 "
             >
               ABOUT ME
@@ -66,7 +57,7 @@ const About = () => {
               variants={fadeIn3("up", "tween", 1.0, 0.8)}
               initial="hidden"
               whileInView="show"
-              animate={animateExit ? "show" : "exit"}
+              exit="show"
               className="text-background text-[38px] sm:text-[56px] md:text-[68px] opacity-15 "
             >
               ABOUT ME
@@ -75,7 +66,7 @@ const About = () => {
               variants={fadeIn3("up", "tween", 1.2, 0.8)}
               initial="hidden"
               whileInView="show"
-              animate={animateExit ? "show" : "exit"}
+              exit="show"
               className="text-background text-[38px] sm:text-[56px] md:text-[68px] opacity-5 "
             >
               ABOUT ME
@@ -87,7 +78,7 @@ const About = () => {
             variants={fadeIn3("up", "tween", 1.4, 0.8)}
             initial="hidden"
             whileInView="show"
-            animate={animateExit ? "show" : "exit"}
+            exit="show"
             whileHover={{ scale: 1.05 }}
             transition={transition1}
             src="/images/about-img.png"
@@ -100,7 +91,7 @@ const About = () => {
         variants={fadeIn3("up", "tween", 0.2, 0.8)}
         initial="hidden"
         whileInView="show"
-        animate={animateExit ? "show" : "exit"}
+        exit="show"
         className=" flex justify-end mt-[-12px] w-full sm:w-[90%] px-12 mx-auto pb-24"
       >
         <Typography variant="p" className="text-background ">

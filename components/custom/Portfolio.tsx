@@ -21,16 +21,6 @@ interface PortfolioItem {
 }
 
 const Portfolio = () => {
-  const [animateExit, setAnimateExit] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAnimateExit(true);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   const [selectedTab, setSelectedTab] = useState<string>("website");
   const [portfolioDatas, setPortfolioData] =
     useState<PortfolioItem[]>(portfolioData);
@@ -62,7 +52,7 @@ const Portfolio = () => {
             variants={fadeIn3("up", "tween", index * 0.2, 0.8)}
             initial="hidden"
             whileInView="show"
-            animate={animateExit ? "show" : "exit"}
+            exit="show"
             whileHover={{ scale: 1.05 }}
             transition={transition1}
             key={index}
