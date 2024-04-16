@@ -26,7 +26,7 @@ const Hero = () => {
 
   const { scrollY } = useScroll();
   const yImage = useTransform(scrollY, [0, 200], [1, 0.5]);
-  const scaleImage = useTransform(scrollY, [0, 200], [1, 1.5]);
+  const scaleImage = useTransform(scrollY, [0, 200], [1, 1]);
   const opacityImage = useTransform(
     scrollY,
     [0, 150, 250, 300],

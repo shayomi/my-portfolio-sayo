@@ -73,6 +73,7 @@
   }
   body {
     @apply text-foreground;
+    max-width: fit-content;
 
     // background-image: url("../../public/images/home-bg.png");
     // background-size: cover;

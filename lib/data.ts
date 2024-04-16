@@ -146,28 +146,22 @@ export const navData = [
 
 export const reviewData = [
   {
-    avatar: "/images/avatar1.jpg",
-    name: "Seun Olabiyi",
+    avatar: "/images/seun.jpeg",
+    name: "Seun Akoyon",
     review:
-      "Sayomi is an amazing developer who is very diligent and keep to time. His web designs are topnotch, easy to navigate and interactive",
+      "Sayomi is an amazing developer who is very diligent and keep to time. We have worked on quite a lot of projects together and he never disappoints.His web designs are topnotch, easy to navigate and interactive",
   },
   {
-    avatar: "/images/avatar2.jpg",
-    name: "Wale Stark",
+    avatar: "/images/conah.jpeg",
+    name: "Comfort Onah",
     review:
-      "Sayomi is a former employee of mine. He worked with us a UI/UX developer and did his jobs well. He is dilligent and hardwork and innovative ",
+      "Sayo is my go to guy when it comes to web development and designs.His time management is something i love about him and also his commitments to work. ",
   },
   {
-    avatar: "/images/avatar3.jpg",
-    name: "Leke Victor",
+    avatar: "/images/abbey.jpeg",
+    name: "Ismail Olasunkanmi",
     review:
-      "Sayo is my go to guy when it comes to artworks. He draws well and also installs artworks neatly. He is a great guy",
-  },
-  {
-    avatar: "/images/avatar4.jpg",
-    name: "Babasegun Thomas",
-    review:
-      "Sayo Adegoroye is a good person to work with, He always delivers his jobs to the best of his ability ",
+      "Sayo is my mentee and i can tell you he is a great developer. Always learning and improving , keeping up with latest technology at all cost. He is very intelligent and resourceful",
   },
 ];
 

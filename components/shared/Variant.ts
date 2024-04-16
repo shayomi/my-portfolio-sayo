@@ -85,7 +85,7 @@ export const fadeIn3 = (
 ) => {
   return {
     hidden: {
-      x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
+      x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
       y: direction === "up" ? 100 : direction === "down" ? -10 : -100,
       opacity: 0,
     },

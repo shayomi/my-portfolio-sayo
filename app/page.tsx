@@ -7,7 +7,7 @@ import Intro from "@/components/custom/Intro";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-background ">
+    <main className="flex flex-col min-h-screen bg-background overflow-hidden">
       <Hero />
       <Services />
       <Reviews />
