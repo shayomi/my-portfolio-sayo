@@ -74,6 +74,7 @@
   body {
     @apply text-foreground;
     max-width: fit-content;
+    overflow-x: hidden;
 
     // background-image: url("../../public/images/home-bg.png");
     // background-size: cover;

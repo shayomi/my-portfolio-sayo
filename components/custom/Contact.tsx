@@ -40,17 +40,17 @@ const Contact = () => {
         </Typography>
         <div className="mt-6 relative">
           <h1
-            className="text-foreground text-center font-bold text-[50px] sm:text-[70px] md:text-[100px] lg:text-[130px] xl:text-[180px] tracking-tighter cursor-pointer"
+            className="text-foreground text-center font-bold text-[50px] sm:text-[70px] md:text-[100px] lg:text-[130px] xl:text-[180px] tracking-tighter cursor-pointer relative"
             onClick={handleGetInTouchClick}
           >
             GET IN TOUCH
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: slide ? "100%" : 0 }}
+              transition={{ duration: 0.3 }}
+              className="absolute bottom-0 left-0 bg-foreground h-4 z-0"
+            ></motion.div>
           </h1>
-          <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: slide ? "100%" : 0 }}
-            transition={{ duration: 0.3 }}
-            className="absolute bottom-0 left-0 bg-foreground h-1 z-0"
-          ></motion.div>
         </div>
         <motion.div
           initial={{ height: 0 }}
