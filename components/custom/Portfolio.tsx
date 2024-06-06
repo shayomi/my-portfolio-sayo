@@ -49,7 +49,7 @@ const Portfolio = () => {
       <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {portfolioDatas.map((portfolio: PortfolioItem, index: number) => (
           <motion.div
-            variants={fadeIn3("up", "tween", index * 0.2, 0.8)}
+            variants={fadeIn3("up", "tween", index * 0.2, 0.4)}
             initial="hidden"
             whileInView="show"
             exit="show"

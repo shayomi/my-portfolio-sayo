@@ -39,7 +39,7 @@ const Services = () => {
           </motion.div>
           <motion.div className="basis-full sm:basis-6/12 py-8">
             <motion.h2
-              variants={fadeIn("right", "spring", 0.2, 0.8)}
+              variants={fadeIn("right", "spring", 0.2, 0.4)}
               initial="hidden"
               whileInView={"show"}
               exit={"show"}
@@ -54,7 +54,7 @@ const Services = () => {
 
             <motion.ul className="block list-disc text-background mt-8 space-y-5">
               <motion.li
-                variants={fadeIn("right", "spring", 0.4, 0.8)}
+                variants={fadeIn("right", "spring", 0.2, 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 exit={"show"}
@@ -63,7 +63,7 @@ const Services = () => {
                 a personalized online presence.
               </motion.li>
               <motion.li
-                variants={fadeIn("right", "spring", 0.6, 0.8)}
+                variants={fadeIn("right", "spring", 0.4, 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 exit={"show"}
@@ -72,7 +72,7 @@ const Services = () => {
                 for optimal engagement.
               </motion.li>
               <motion.li
-                variants={fadeIn("right", "spring", 0.8, 0.8)}
+                variants={fadeIn("right", "spring", 0.6, 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 exit={"show"}
@@ -110,7 +110,7 @@ const Services = () => {
           </div>
           <motion.div className="basis-full sm:basis-6/12 py-8">
             <motion.h2
-              variants={fadeIn("right", "spring", 0.2, 0.8)}
+              variants={fadeIn("right", "spring", 0.2, 0.4)}
               initial="hidden"
               whileInView={"show"}
               exit={"show"}
@@ -127,7 +127,7 @@ const Services = () => {
 
             <motion.ul className="block list-disc text-background  mt-8 space-y-5">
               <motion.li
-                variants={fadeIn("right", "spring", 0.4, 0.8)}
+                variants={fadeIn("right", "spring", 0.2, 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 exit={"show"}
@@ -137,7 +137,7 @@ const Services = () => {
                 identity.
               </motion.li>
               <motion.li
-                variants={fadeIn("right", "spring", 0.6, 0.8)}
+                variants={fadeIn("right", "spring", 0.4, 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 exit={"show"}
@@ -147,7 +147,7 @@ const Services = () => {
                 engagement for a unified digital journey.
               </motion.li>
               <motion.li
-                variants={fadeIn("right", "spring", 0.8, 0.8)}
+                variants={fadeIn("right", "spring", 0.6, 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 exit={"show"}

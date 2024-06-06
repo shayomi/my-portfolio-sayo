@@ -42,6 +42,13 @@ export const heroData = [
 
 export const portfolioData = [
   {
+    icon: "/images/cinevideo.png",
+    title: "CINE ",
+    tags: "Video Conference App",
+    website: "http://cinevideo.vercel.app",
+    github: "https://github.com/shayomi/cine",
+  },
+  {
     icon: "/images/eventspaces.png",
     title: "EventSpace ",
     tags: "Social App",
@@ -76,13 +83,13 @@ export const portfolioData = [
     website: "https://capitalstatefarm.com",
     github: "https://github.com/shayomi/capital-state-farm",
   },
-  {
-    icon: "/images/spinbet.png",
-    title: "Spinbet",
-    tags: "Betting App",
-    website: "https://spinzbet.web.app/",
-    github: "https://github.com/shayomi/Spinbet",
-  },
+  // {
+  //   icon: "/images/spinbet.png",
+  //   title: "Spinbet",
+  //   tags: "Betting App",
+  //   website: "https://spinzbet.web.app/",
+  //   github: "https://github.com/shayomi/Spinbet",
+  // },
 ];
 
 export const UIUXData = [
