@@ -56,6 +56,13 @@ export const portfolioData = [
     github: "https://github.com/shayomi/Eventspace",
   },
   {
+    icon: "/images/janesweb.png",
+    title: "Janes Auction ",
+    tags: "Ecommerce",
+    website: "https://janes.vercel.app",
+    github: "https://github.com/shayomi/Janes-Auction-webapp",
+  },
+  {
     icon: "/images/genteeecos.png",
     title: "Gentee Cosmestics ",
     tags: "Ecommerce",
@@ -83,13 +90,13 @@ export const portfolioData = [
     website: "https://capitalstatefarm.com",
     github: "https://github.com/shayomi/capital-state-farm",
   },
-  // {
-  //   icon: "/images/spinbet.png",
-  //   title: "Spinbet",
-  //   tags: "Betting App",
-  //   website: "https://spinzbet.web.app/",
-  //   github: "https://github.com/shayomi/Spinbet",
-  // },
+  {
+    icon: "/images/spinbet.png",
+    title: "Spinbet",
+    tags: "Betting App",
+    website: "https://spinzbet.web.app/",
+    github: "https://github.com/shayomi/Spinbet",
+  },
 ];
 
 export const UIUXData = [
