@@ -49,6 +49,13 @@ export const portfolioData = [
     github: "https://github.com/shayomi/cine",
   },
   {
+    icon: "/images/inventory.png",
+    title: "LEGION ",
+    tags: "Inventory Management ",
+    website: "https://master.dbwj8sb29fpl3.amplifyapp.com/dashboard",
+    github: "https://github.com/shayomi/Inventory-dashboard",
+  },
+  {
     icon: "/images/eventspaces.png",
     title: "EventSpace ",
     tags: "Social App",
