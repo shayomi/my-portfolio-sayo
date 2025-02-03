@@ -70,6 +70,13 @@ export const portfolioData = [
     github: "https://github.com/shayomi/Janes-Auction-webapp",
   },
   {
+    icon: "/images/Accdashboard.png",
+    title: "Acceler8 Africa Dashboard ",
+    tags: "Data",
+    website: "https://accelerate-dashboard.vercel.app/dashboard/",
+    github: "https://github.com/shayomi/Accelerate-dashboard",
+  },
+  {
     icon: "/images/genteeecos.png",
     title: "Gentee Cosmestics ",
     tags: "Ecommerce",
@@ -190,7 +197,7 @@ export const ContactData = [
   {
     icon: "/images/call.svg",
     title: "Call me at",
-    description: "+2349034970469",
+    description: "+447349722273",
     link: "https://wa.link/37lp8a",
   },
   {

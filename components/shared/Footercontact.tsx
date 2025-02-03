@@ -16,7 +16,7 @@ const FooterContact: React.FC = () => {
           <Typography variant="p" className="text-foreground font-bold">
             Email:{" "}
             <a href="mailto:sayoadegoroye@gmail.com" className="font-normal">
-              sayoadegoroye@gmail.com
+              adegoroyesayotosin@gmail.com
             </a>
           </Typography>
         </div>
