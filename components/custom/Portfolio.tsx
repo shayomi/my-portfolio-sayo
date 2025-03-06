@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -18,6 +19,7 @@ interface PortfolioItem {
   website: string;
   github: string;
   tags: string;
+  description: string;
 }
 
 const Portfolio = () => {
@@ -67,6 +69,14 @@ const Portfolio = () => {
                   height={800}
                   className="object-cover w-full h-full mx-auto"
                 />
+              </div>
+              <div className="absolute bottom-10 w-full left-0 bg-gray-900 opacity-90">
+                <Typography
+                  variant="p"
+                  className="text-white font-medium px-4 py-6 justify-center"
+                >
+                  {portfolio.description}
+                </Typography>
               </div>
             </Link>
             <div className="px-4 flex flex-row items-center justify-between mt-4">
