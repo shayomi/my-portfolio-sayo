@@ -60,7 +60,7 @@ const Service = () => {
               exit={"show"}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="relative flex flex-row gap-6 justify-between items-start border-b-[1px] border-gray-700 pb-12"
+              className="relative flex flex-col sm:flex-row gap-6 justify-between items-start border-b-[1px] border-gray-700 pb-12"
             >
               <div className="flex flex-row gap-6 items-start">
                 <Typography
@@ -76,7 +76,7 @@ const Service = () => {
 
               <Typography
                 variant="smallText"
-                className="text-gray-600 font-normal max-w-lg leading-6s text-right"
+                className="text-gray-600 font-normal max-w-lg leading-6s text-right leading-5"
               >
                 {service.details}
               </Typography>

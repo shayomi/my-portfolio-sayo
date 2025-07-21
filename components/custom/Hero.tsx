@@ -31,7 +31,7 @@ const VideoIntro = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         initial="hidden"
         whileInView="show"
-        className="relative z-20 flex flex-col md:flex-row gap-12 items-end justify-center h-full text-center text-white"
+        className="relative z-20 flex flex-col md:flex-row gap-12 px-8 mt-48 md:mt-0 items-end justify-center h-full text-center text-white"
       >
         <div className="mb-6">
           <img className="w-full" src="/images/sayo-logo.png" alt="logo here" />
