@@ -45,7 +45,7 @@ const SelectedWorks = () => {
                 <img
                   src={topProjects[0].image}
                   alt={topProjects[0].name}
-                  className="h-[750px] w-full object-cover transition-transform duration-500 ease-in-out hover:scale-95"
+                  className="h-[400px] md:h-[750px] w-full object-cover transition-transform duration-500 ease-in-out hover:scale-95"
                 />
                 <Typography variant="h4" className="text-white font-medium">
                   {topProjects[0].name}

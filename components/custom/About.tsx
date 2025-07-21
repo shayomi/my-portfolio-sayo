@@ -10,7 +10,7 @@ import { transition1 } from "../shared/Transition";
 
 const About = () => {
   return (
-    <section className="bg-black mt-48">
+    <section className="bg-black mt-24 md:mt-48">
       <motion.div
         className="  mt-24 relative px-4 sm:px-12 text-center"
         id="about"
@@ -26,7 +26,7 @@ const About = () => {
               transition={transition1}
               src="/images/sayomi-copy.png"
               alt="about image"
-              className="w-full max-h-[600px] h-full object-contain "
+              className="w-full max-h-[600px] h-full object-contain grayscale "
             />
           </div>
 
@@ -37,7 +37,9 @@ const About = () => {
             exit="show"
             className="w-full md:w-[50%] "
           >
-            <h1 className="background-text relative z-10 mb-48">ABOUT ME</h1>
+            <h1 className="background-text relative z-10 mb-12 md:mb-48">
+              ABOUT ME
+            </h1>
             <Typography variant="p" className="text-white text-start ">
               Throughout my career, I&apos;ve collaborated with leading
               organizations like Techclout Africa, Run Technology, Nexapluxe,

@@ -11,7 +11,7 @@ const AboutHeader = () => {
       <Header />
 
       <div className="pt-56 px-12">
-        <div className="flex flex-row justify-between gap-6 max-w-[1800px]">
+        <div className="flex flex-col md:flex-row justify-between gap-6 max-w-[1800px]">
           <div className="max-w-xl ">
             <motion.div
               variants={fadeIn("right", "tween", 0.2, 0.4)}

@@ -25,8 +25,8 @@ export default function WorkDetail({ params }: { params: { slug: string } }) {
           </Link>
           <h1 className="text-5xl font-bold mb-6 px-2 mt-12">{project.name}</h1>
 
-          <div className="flex flex-col md:flex-row gap-6 mb-10 py-10 px-4 h-[600px]">
-            <div className="flex flex-row gap-6 justify between">
+          <div className="flex flex-col  md:flex-row gap-6 mb-10 py-10 px-0 md:px-4 h-[600px]">
+            <div className="flex flex-col md:flex-row gap-6 justify between">
               <div className="w-full md:w-[50%]">
                 <img
                   src={project.image}
@@ -78,7 +78,7 @@ export default function WorkDetail({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          <div className="space-y-10 px-6">
+          <div className="space-y-10 px-0 md:px-6 mt-24 md:mt-6">
             <div>
               <h2 className="text-2xl font-semibold mb-2">The Problem</h2>
               <p className="text-gray-300">{project.problem}</p>
