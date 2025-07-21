@@ -15,7 +15,7 @@ const Review = () => {
         <div className="max-w-xl px-6 lg:px-24 mb-12">
           <div className="flex flex-col items-start gap-2">
             <Typography variant="h1" className="text-white text-6xl font-bold">
-              CLIENT'S
+              CLIENT&apos;S
             </Typography>
             <div className="flex flex-row gap-2 items-center">
               <img src="/images/line.png" alt="line" className="w-[80px]" />

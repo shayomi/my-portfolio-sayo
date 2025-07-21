@@ -36,11 +36,10 @@ const AboutHeader = () => {
             className="flex flex-col gap-2"
           >
             <Typography variant="h3" className="text-white">
-              {" "}
-              // 2020-25
+              2020-25
             </Typography>
             <Typography variant="h4" className="text-white max-w-xl">
-              We’re a team of creative thinkers, designers, and strategists
+              We&apos;re a team of creative thinkers, designers, and strategists
               <span className="text-white/60">
                 {" "}
                 dedicated to building brands that stand out.
