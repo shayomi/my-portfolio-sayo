@@ -186,8 +186,8 @@ export const UIUXData = [
 export const navData = [
   { href: "/", name: "Home" },
   { href: "#services", name: "Service" },
-  { href: "#portfolio", name: "Portfolio" },
-  { href: "#about", name: "About" },
+  { href: "/work", name: "Portfolio" },
+  { href: "/about", name: "About" },
   { href: "#reviews", name: "Reviews" },
   { href: "#contact", name: "Contact" },
 ];
@@ -196,18 +196,42 @@ export const reviewData = [
   {
     avatar: "/images/seun.jpeg",
     name: "Seun Akoyon",
+    title: "Run technology",
     review:
       "Sayomi is an amazing developer who is very diligent and keep to time. We have worked on quite a lot of projects together and he never disappoints.His web designs are topnotch, easy to navigate and interactive",
   },
   {
     avatar: "/images/conah.jpeg",
     name: "Comfort Onah",
+    title: "Independent",
     review:
       "Sayo is my go to guy when it comes to web development and designs.His time management is something i love about him and also his commitments to work. ",
   },
   {
     avatar: "/images/abbey.jpeg",
     name: "Ismail Olasunkanmi",
+    title: "Deveote CEO",
+    review:
+      "Sayo is my mentee and i can tell you he is a great developer. Always learning and improving , keeping up with latest technology at all cost. He is very intelligent and resourceful",
+  },
+  {
+    avatar: "/images/chiye.png",
+    name: "Chinyere Inya",
+    title: "Future Africa",
+    review:
+      "Sayomi is an amazing developer who is very diligent and keep to time. We have worked on quite a lot of projects together and he never disappoints.His web designs are topnotch, easy to navigate and interactive",
+  },
+  {
+    avatar: "/images/conah.jpeg",
+    name: "Temitayo Noamesi",
+    title: "independent",
+    review:
+      "Sayo is my go to guy when it comes to web development and designs.His time management is something i love about him and also his commitments to work. ",
+  },
+  {
+    avatar: "/images/ife.webp",
+    name: "Ife Adepoju",
+    title: "Independent",
     review:
       "Sayo is my mentee and i can tell you he is a great developer. Always learning and improving , keeping up with latest technology at all cost. He is very intelligent and resourceful",
   },
@@ -249,5 +273,17 @@ export const Footercontactdata = [
   {
     icon: "/images/whatsapp.svg",
     website: "https://wa.link/37lp8a",
+  },
+];
+
+export const trustedBy = [
+  {
+    avatar: "/images/run-logo.png",
+  },
+  {
+    avatar: "/images/aawhite.png",
+  },
+  {
+    avatar: "/images/fawhitee.png",
   },
 ];

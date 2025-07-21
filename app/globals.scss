@@ -73,7 +73,7 @@
   }
   body {
     @apply text-foreground;
-    max-width: fit-content;
+    max-width: 100%;
     overflow-x: hidden;
 
     // background-image: url("../../public/images/home-bg.png");
@@ -100,9 +100,60 @@
     background-size: contain;
   }
 
+  .testimonail-bg {
+    @apply bg-cover bg-center w-full flex items-center;
+    // background-color: #f8f6e7;
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+      background-position-x: 30%;
+      min-height: 400px;
+      height: 100%;
+      padding: 50px 0;
+    }
+  }
+
+  .about-bg {
+    @apply bg-cover bg-center w-full flex items-center;
+    // background-color: #f8f6e7;
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+      background-position-x: 30%;
+      min-height: 400px;
+      height: 100%;
+      padding: 50px 0;
+    }
+  }
+
+  .footer-bg {
+    @apply bg-cover bg-center w-full flex items-center;
+    // background-color: #f8f6e7;
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+      background-position-x: 30%;
+      min-height: 400px;
+      height: 100%;
+      padding: 50px 0;
+    }
+  }
+
+  .testimonial-bg {
+    background-image: url("../public/images/test.svg");
+  }
+
+  .footer-bg {
+    background-image: url("../public/images/footerbg.png");
+  }
+
+  .about-bg {
+    background-image: url("../public/images/footerbg.png");
+  }
+
   .background-text {
-    @apply text-muted font-bold z-0;
-    color: rgba(197, 200, 198, 0.07);
+    @apply text-white opacity-30 font-bold z-0;
+    color: rgba(255, 255, 255, 0.725);
     font-size: 7.2rem;
     line-height: 7.2rem;
 

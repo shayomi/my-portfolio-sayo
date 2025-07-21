@@ -34,13 +34,13 @@ const Contact = () => {
         <h1 className="background-text text-foreground opacity-15">CONTACT</h1>
         <Typography
           variant="h2"
-          className="mt-12 text-[24px] sm:text-[38px] md:text-[42px]"
+          className="mt-12 text-[24px] sm:text-[38px] md:text-[42px] text-white"
         >
           I&apos;m positive you want to work me
         </Typography>
         <div className="mt-6 relative">
           <h1
-            className="text-foreground text-center font-bold text-[50px] sm:text-[70px] md:text-[100px] lg:text-[130px] xl:text-[180px] tracking-tighter cursor-pointer relative"
+            className="text-white text-center font-bold text-[50px] sm:text-[70px] md:text-[100px] lg:text-[130px] xl:text-[180px] tracking-tighter cursor-pointer relative"
             onClick={handleGetInTouchClick}
           >
             GET IN TOUCH

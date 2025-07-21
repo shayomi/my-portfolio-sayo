@@ -1,91 +1,94 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import hero from "../../public/Images/hero-img.svg";
-import hero2 from "../../public/images/sayomi.png";
-import hero3 from "../../public/images/sayo-sm.png";
-import Image from "next/image";
-import { Typography } from "../ui/typography";
-import { heroData } from "@/lib/data";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
+import { Typography } from "@/components/ui/typography";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
-import Intro from "./Intro";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { fadeIn3 } from "../shared/Variant";
+import React from "react";
+import { fadeIn, fadeIn3 } from "../shared/Variant";
+import { FaArrowRight } from "react-icons/fa";
+import { trustedBy } from "@/lib/data";
+import { transition1 } from "../shared/Transition";
+import Header from "../shared/Header";
 
-const Hero = () => {
-  const [animateExit, setAnimateExit] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAnimateExit(true);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  const { scrollY } = useScroll();
-  const yImage = useTransform(scrollY, [0, 200], [1, 0.5]);
-  const scaleImage = useTransform(scrollY, [0, 200], [1, 1]);
-  const opacityImage = useTransform(
-    scrollY,
-    [0, 150, 250, 300],
-    [1, 0.5, 0.3, 0]
-  );
-
+const VideoIntro = () => {
   return (
-    <>
-      <Intro />
-      <motion.section className=" hero-banner-bg  min-h-[500px] h-[50vh] sm:min-h-[600px] xl:min-h-[700px] sm:h-[70vh] w-full absolute top-0 z-10 ">
-        <motion.div
-          style={{ y: yImage, opacity: opacityImage, scale: scaleImage }}
-        >
-          <motion.div className="container flex items-center flex-col justify-center mt-[20rem] sm:mt-56 ">
-            <motion.img
-              variants={fadeIn3("up", "fade", 4.2, 1.2)}
-              initial="hidden"
-              whileInView={"show"}
-              animate={animateExit ? "show" : "exit"}
-              alt="hero-image"
-              src="/images/sayomi.png"
-              className="hidden sm:block w-[1000px]"
-            />
-            <motion.img
-              variants={fadeIn3("up", "fade", 4.2, 1.2)}
-              initial="hidden"
-              whileInView={"show"}
-              animate={animateExit ? "show" : "exit"}
-              alt="hero-image"
-              src="/images/sayo-sm.png"
-              width={2000}
-              className=" sm:hidden"
-            />
-          </motion.div>
-          <motion.div className="flex flex-row gap-x-3 items-baseline mt-6 justify-center ">
-            {heroData.map((hero, index) => {
-              return (
-                <motion.h3
-                  variants={fadeIn3("up", "fade", 4.4, 1.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  animate={animateExit ? "show" : "exit"}
-                  key={index}
-                  className="border-[1px] rounded-2xl border-gray-600 px-2 py-1 text-[12px] sm:text-[16px] text-gray-900  text-center"
-                >
-                  {hero.title}
-                </motion.h3>
-              );
-            })}
-          </motion.div>
-          <Link href="#contact">
-            <Button variant="default" className="mt-12 flex mx-auto ">
-              Let&apos;s talk
-            </Button>
-          </Link>
-        </motion.div>
-      </motion.section>
-    </>
+    <section className="relative w-full h-[750px] overflow-hidden mx-auto">
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src="/images/hero-video.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+
+      <div className="absolute inset-0 bg-black/70 z-10" />
+      <Header />
+
+      <motion.div
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        initial="hidden"
+        whileInView="show"
+        className="relative z-20 flex flex-col md:flex-row gap-12 items-end justify-center h-full text-center text-white"
+      >
+        <div className="mb-6">
+          <img className="w-full" src="/images/sayo-logo.png" alt="logo here" />
+        </div>
+
+        <div className="flex flex-col gap-4 items-start">
+          <Typography
+            variant="h2"
+            className="font-bold text-white max-w-[700px] leading-[64px] text-start"
+          >
+            Transforming ideas into visual masterpieces
+          </Typography>
+
+          <Typography
+            variant="h4"
+            className="font-medium text-white mt-4 max-w-[700px] text-start"
+          >
+            Web development / AI agents / Automations / UI-UX Designs / Tech
+            strategist / Sustainability Specialist
+          </Typography>
+
+          <div className="bg-white/10 backdrop-blur-md justify-start  border border-gray-700 px-4 py-1 ">
+            <Link href="#contact" className="flex flex-row gap-2 items-center">
+              <Typography
+                variant="smallText"
+                className="font-normal text-white"
+              >
+                Get started
+              </Typography>
+              <div className="bg-red-500 p-3">
+                <FaArrowRight />{" "}
+              </div>
+            </Link>
+          </div>
+          <div>
+            <div className="flex flex-col gap-3 items-start mt-24 mb-6">
+              <Typography variant="h3" className="font-medium text-white">
+                Trusted By:
+              </Typography>
+              <div className="flex flex-row gap-12 items-center mt-2">
+                {trustedBy.map((trust, index: number) => (
+                  <motion.div
+                    variants={fadeIn3("up", "tween", 0.2, 0.4)}
+                    whileHover={{ scale: 1.05 }}
+                    transition={transition1}
+                    key={index}
+                  >
+                    <img className="w-[120px]" src={trust.avatar} />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </section>
   );
 };
 
-export default Hero;
+export default VideoIntro;

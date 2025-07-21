@@ -8,7 +8,7 @@ import { fadeIn } from "../shared/Variants2";
 
 const Reviews = () => {
   return (
-    <motion.section id="reviews" className="mt-24 px-2 sm:px-12">
+    <motion.section id="reviews" className="container mt-24 px-2 sm:px-12">
       <h1 className="background-text text-foreground opacity-15">REVIEWS</h1>
       <Typography variant="h2" className="text-start mt-6">
         {" "}

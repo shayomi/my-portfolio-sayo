@@ -41,7 +41,7 @@ const ContactForm = () => {
 
   return (
     <div className="mt-6">
-      <Typography variant="h4" className="text-foreground font-bold">
+      <Typography variant="h4" className="text-white font-bold">
         Send me a message
       </Typography>
 
@@ -56,7 +56,7 @@ const ContactForm = () => {
                   <FormControl>
                     <Input
                       placeholder="First Name"
-                      className="px-2.5 bg-white border-[1px] border-primary bg-opacity-25 text-foreground placeholder:text-[#656565] font-medium placeholder:font-light"
+                      className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                       {...field}
                     />
                   </FormControl>
@@ -73,7 +73,7 @@ const ContactForm = () => {
                   <FormControl>
                     <Input
                       placeholder="Your Phone Number"
-                      className="px-2.5 bg-white border-[1px] border-primary bg-opacity-25 text-foreground placeholder:text-[#656565] font-medium placeholder:font-light"
+                      className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                       {...field}
                     />
                   </FormControl>
@@ -92,7 +92,7 @@ const ContactForm = () => {
                       <Input
                         placeholder="Email"
                         type="email"
-                        className="px-2.5 bg-white border-[1px] border-primary bg-opacity-25 text-foreground placeholder:text-[#656565] font-medium placeholder:font-light"
+                        className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                         {...field}
                       />
                     </FormControl>
@@ -112,7 +112,7 @@ const ContactForm = () => {
                   <FormControl>
                     <Textarea
                       placeholder="What would you like me to do for you?"
-                      className="px-2.5 bg-white border-[1px] border-primary bg-opacity-25 text-foreground placeholder:text-[#656565] font-medium placeholder:font-light"
+                      className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                       {...field}
                     />
                   </FormControl>
@@ -123,7 +123,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <Button className="h-12 w-[120px] mt-4" type="submit">
+            <Button className="h-12 w-[120px] bg-red-600 mt-4" type="submit">
               Send message
             </Button>
           </div>
