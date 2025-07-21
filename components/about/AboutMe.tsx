@@ -28,7 +28,7 @@ const AboutMe = () => {
             className="flex flex-col gap-4 w-full md:w-[50%]"
           >
             <Typography variant="h2" className="text-white/60 mt-8">
-              // OUR STORY //
+              OUR STORY
             </Typography>
             <div className="flex flex-col gap-1 mt-24">
               <h1 className="background-text"> 25+</h1>

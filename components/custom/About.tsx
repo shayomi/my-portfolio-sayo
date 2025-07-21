@@ -51,7 +51,7 @@ const About = () => {
               strategic capabilities.
             </Typography>
             <Typography variant="p" className="text-white text-start ">
-              Working across industries and teams, I've developed a deep
+              Working across industries and teams, I&apos;ve developed a deep
               understanding of modern web development practices, with a strong
               focus on clean code, performance optimization, and user-first
               design.
