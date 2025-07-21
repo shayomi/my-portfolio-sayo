@@ -9,7 +9,7 @@ const ContactMail = () => {
         {ContactData.map((item, index) => (
           <div
             key={index}
-            className="bg-[#a0a0a0] gray-card-shadow px-2.5 py-5 sm:px-4 sm:py-6 text-center  rounded-lg"
+            className="bg-white gray-card-shadow px-2.5 py-5 sm:px-4 sm:py-6 text-center  rounded-lg"
           >
             <a href={item.link}>
               <img

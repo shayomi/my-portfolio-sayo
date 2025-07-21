@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -10,15 +11,15 @@ import logo from "../../public/images/logos.png";
 import { motion } from "framer-motion";
 // Variant import
 import { staggerContainer, fadeIn } from "./Variant";
+import { Typography } from "../ui/typography";
 
 const headerVariants = {
   hidden: {
     padding: "20px 0 20px 0",
-    background: "rgba(0,0,0,0.92)",
   },
   show: {
     padding: "4px 0 4px 0",
-    background: "rgba(0,0,0,0.92)",
+
     transition: {
       type: "spring",
     },
@@ -61,7 +62,7 @@ const Header = () => {
       variants={headerVariants}
       initial="hidden"
       animate={isActive ? "show" : ""}
-      className="fixed w-full max-w-[1800px] z-50 py-4"
+      className="absolute w-full max-w-[1800px] z-50 py-4"
     >
       <motion.div
         variants={staggerContainer({ staggerChildren: 0.3, delayChildren: 1 })}
@@ -69,7 +70,7 @@ const Header = () => {
         animate={"show"}
         className="container mx-auto"
       >
-        <div className="flex justify-between mx-auto lg:ml-32 items-center px-4 lg:px-0 relative text-white">
+        <div className="flex justify-between mx-auto lg:ml-64 items-center px-4 lg:px-0 relative text-white">
           {/* Menu button */}
           <motion.div
             variants={fadeIn("down", "tween", 1, 1.4)}
@@ -108,6 +109,9 @@ const Header = () => {
                 alt=""
               />
             </a>
+          </motion.div>
+          <motion.div variants={fadeIn("down", "tween", 1.3, 1.4)}>
+            <Typography>Gloucester, United Kingdom</Typography>
           </motion.div>
           {/* Social icons */}
           <motion.div

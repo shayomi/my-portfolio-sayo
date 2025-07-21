@@ -59,12 +59,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black w-full mx-auto">
       <body className={kodchasan.className}>
-        <div>
-          <Header />
+        <div className="w-full  bg-black mx-auto">
+          {/* <Header /> */}
 
-          <main>{children}</main>
+          <main className="mx-auto w-full">{children}</main>
 
           <Footer />
         </div>
