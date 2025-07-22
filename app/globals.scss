@@ -139,12 +139,29 @@
     }
   }
 
+  .blog-bg {
+    @apply bg-cover bg-bottom w-full flex items-center;
+    // background-color: #f8f6e7;
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+      background-position-x: 30%;
+      min-height: 400px;
+      height: 100%;
+      padding: 50px 0;
+    }
+  }
+
   .testimonial-bg {
     background-image: url("../public/images/test.svg");
   }
 
   .footer-bg {
     background-image: url("../public/images/footerbg.png");
+  }
+
+  .blog-bg {
+    background-image: url("../public/images/blog-hero.png");
   }
 
   .about-bg {
