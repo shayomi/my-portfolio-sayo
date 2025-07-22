@@ -61,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black w-full mx-auto">
       <body className={kodchasan.className}>
-        <div className="w-full  bg-black mx-auto">
+        <div className="w-full  bg-black mx-auto overflow-hidden">
           {/* <Header /> */}
 
           <main className="mx-auto w-full">{children}</main>

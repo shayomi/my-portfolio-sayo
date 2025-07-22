@@ -185,11 +185,11 @@ export const UIUXData = [
 
 export const navData = [
   { href: "/", name: "Home" },
-  { href: "#services", name: "Service" },
+
   { href: "/work", name: "Portfolio" },
   { href: "/about", name: "About" },
-  { href: "#reviews", name: "Reviews" },
-  { href: "#contact", name: "Contact" },
+
+  { href: "/blog", name: "Blog" },
 ];
 
 export const reviewData = [

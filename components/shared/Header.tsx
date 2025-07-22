@@ -110,7 +110,10 @@ const Header = () => {
               />
             </a>
           </motion.div>
-          <motion.div variants={fadeIn("down", "tween", 1.3, 1.4)}>
+          <motion.div
+            className="hidden md:flex"
+            variants={fadeIn("down", "tween", 1.3, 1.4)}
+          >
             <Typography>Gloucester, United Kingdom</Typography>
           </motion.div>
           {/* Social icons */}
