@@ -28,7 +28,7 @@ const AboutMe = () => {
             className="flex flex-col gap-4 w-full md:w-[50%]"
           >
             <Typography variant="h2" className="text-white/60 mt-8">
-              OUR STORY
+              MY STORY
             </Typography>
             <div className="flex flex-col gap-1 mt-24">
               <h1 className="background-text"> 25+</h1>
@@ -69,7 +69,7 @@ const AboutMe = () => {
                   variant="h3"
                   className="text-white font-normal w-full sm:w-[30%]"
                 >
-                  Our mission
+                  My mission
                 </Typography>
                 <Typography
                   variant="smallText"
@@ -92,7 +92,7 @@ const AboutMe = () => {
                   variant="h3"
                   className="text-white font-normal w-full sm:w-[30%]"
                 >
-                  Our vision
+                  My vision
                 </Typography>
                 <Typography
                   variant="smallText"
@@ -115,7 +115,7 @@ const AboutMe = () => {
                   variant="h3"
                   className="text-white font-normal w-full sm:w-[30%]"
                 >
-                  Our goal
+                  My goal
                 </Typography>
                 <Typography
                   variant="smallText"
