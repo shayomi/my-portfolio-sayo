@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { projects } from "@/lib/projectData";
@@ -72,6 +73,20 @@ export default function WorkDetail({ params }: { params: { slug: string } }) {
                         </Typography>
                       ))}
                     </div>
+                  </div>
+
+                  <div className="flex flex-col gap-4">
+                    <Typography variant="h6" className="text-white">
+                      Live site
+                    </Typography>
+                    <Link href={project.website}>
+                      <Typography
+                        variant="h6"
+                        className="italic text-underline text-blue-500"
+                      >
+                        {project.website}
+                      </Typography>
+                    </Link>
                   </div>
                 </div>
               </div>
