@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     name: "Accelerate Africa",
     category: "Asset Management Platform",
-    year: "2024",
+    year: "2022",
     image: "/images/vc.webp",
     website: "http://acceler8.africa",
     github: "https://github.com/shayomi/accelerate-website-develop",
@@ -57,7 +57,7 @@ export const projects = [
     id: 3,
     name: "Savetown",
     category: "Fintech",
-    year: "2024",
+    year: "2023",
     image: "/images/savetown.jpg",
     website: "https://savetown.com",
     github: "https://github.com/Savetown/savetown-website-fe",
@@ -69,6 +69,29 @@ export const projects = [
     result:
       "Savetown empowers families to collaboratively plan, save, and make informed decisions toward homeownership. It fosters community trust and improves financial discipline through shared milestones.",
     techStack: ["Next.js", "JavaScript", "TailwindCSS", "AWS"],
+    gallery: [
+      "/images/nimble-media/1.jpg",
+      "/images/nimble-media/2.jpg",
+      "/images/nimble-media/3.jpg",
+      "/images/nimble-media/4.jpg",
+    ],
+  },
+  {
+    id: 7,
+    name: "Founders Resource",
+    category: "Legal Assets / Tech",
+    year: "2025",
+    image: "/images/founderresource.jpeg",
+    website: "https://founderzresource.com",
+    github: "",
+    slug: "founderz-resource",
+    problem:
+      "Startup founders consistently face overwhelming legal hurdles when launching and growing their businesses. From incorporation and equity structuring to hiring, compliance, IP protection, and fundraising, legal processes are often scattered across expensive law firms, inaccessible documentation, or unverified forums.Many early-stage founders cannot afford dedicated legal counsel, leading to costly mistakes, slow decision-making, and reduced investor confidence. Existing platforms either lack depth, are US-centric, or don’t scale across jurisdictions and growth stages. This legal information gap significantly hinders innovation and confidence, especially for underrepresented and emerging market founders.",
+    approach:
+      "To address this, I built Founder Resource Hub, a centralized legal resource platform purpose-built for startup founders. Developed using Next.js, TailwindCSS, and AWS, the platform offers a trusted, user-friendly experience where founders can access verified legal resources across key categories like incorporation, employment, intellectual property, fundraising, and cap tables. It features jurisdiction-specific templates and downloadable legal documents vetted by experienced startup lawyers, alongside advanced filters to browse by stage, sector, or country. Founders can gain legal clarity through expert insights, curated playbooks, and interactive Q&A forums, while also collaborating with co-founders or legal advisors in shared resource folders. With regular updates on regulatory changes and funding compliance, the platform is designed for accessibility and confidence—even for first-time or non-technical founders—ensuring legal decisions are made with clarity, speed, and trust.",
+    result:
+      "Founder Resource Hub empowers entrepreneurs to take control of their legal journey without the fear, confusion, or cost typically associated with legal work. Founders now have a trusted legal starting point—backed by expert input and real-world startup use cases.By reducing legal ambiguity and democratizing access to high-quality resources, the platform boosts compliance, confidence, and fundraising readiness. It has also become a bridge between founders and startup-focused legal professionals, fostering trust, reducing risk, and helping teams scale more effectively across borders.",
+    techStack: ["Framer", "Javascript"],
     gallery: [
       "/images/nimble-media/1.jpg",
       "/images/nimble-media/2.jpg",
@@ -103,7 +126,7 @@ export const projects = [
     id: 5,
     name: "Event Spaces",
     category: "Event management platform",
-    year: "2023",
+    year: "2025",
     image: "/images/eventspace.jpg",
     website: "http://eventspaces.vercel.app",
     github: "https://github.com/shayomi/Eventspace",

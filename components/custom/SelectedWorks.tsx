@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -6,6 +7,7 @@ import Link from "next/link";
 import { projects } from "@/lib/projectData";
 import { motion } from "framer-motion";
 import { fadeIn } from "../shared/Variant";
+import { Button } from "../ui/button";
 
 const SelectedWorks = () => {
   const topProjects = projects.slice(0, 3); // show only first 3
@@ -19,13 +21,27 @@ const SelectedWorks = () => {
           initial="hidden"
           whileInView="show"
           exit="show"
-          className="max-w-xl mx-auto"
+          className=""
         >
-          <div className="flex flex-col items-start gap-2 justify-center mx-auto">
-            <h1 className="background-text text-white">SELECTED</h1>
-            <div className="flex flex-row gap-2 items-center">
-              <img src="/images/line.png" alt="" className="w-[80px]" />
-              <h1 className="background-text text-white">WORKS</h1>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="flex flex-col items-start gap-2 ">
+              <h1 className="background-text text-white">SELECTED</h1>
+              <div className="flex flex-row gap-2 items-center">
+                <img src="/images/line.png" alt="" className="w-[80px]" />
+                <h1 className="background-text text-white">WORKS</h1>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3 items-start">
+              <Typography variant="h4" className="font-medium text-white">
+                {" "}
+                This is not all Ive got
+              </Typography>
+              <Link href="/work">
+                <Button variant="default" size="lg">
+                  View all
+                </Button>
+              </Link>
             </div>
           </div>
         </motion.div>

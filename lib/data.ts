@@ -219,21 +219,21 @@ export const reviewData = [
     name: "Chinyere Inya",
     title: "Future Africa",
     review:
-      "Sayomi is an amazing developer who is very diligent and keep to time. We have worked on quite a lot of projects together and he never disappoints.His web designs are topnotch, easy to navigate and interactive",
+      "Sayomi is a highly reliable and detail-oriented developer. We've collaborated on multiple projects, and he consistently delivers clean, on-time work with excellent communication throughout. His frontend skills, combined with his understanding of user experience and marketing technologies, make his web solutions not just functional, but also intuitive and conversion-focused.",
   },
   {
     avatar: "/images/conah.jpeg",
     name: "Temitayo Noamesi",
     title: "independent",
     review:
-      "Sayo is my go to guy when it comes to web development and designs.His time management is something i love about him and also his commitments to work. ",
+      "Working with Sayomi has been a game-changer. He brings creativity, discipline, and a results-driven mindset to every project. His ability to combine frontend engineering with AI tools, automation, and design thinking makes him a rare talent. You can always count on him to ship high-quality work that users love and businesses benefit from.",
   },
   {
     avatar: "/images/ife.webp",
     name: "Ife Adepoju",
-    title: "Independent",
+    title: "Founders Resource",
     review:
-      "Sayo is my mentee and i can tell you he is a great developer. Always learning and improving , keeping up with latest technology at all cost. He is very intelligent and resourceful",
+      "I’ve had the pleasure of working with Sayomi on several projects, and what stands out every time is his sharp eye for design, seamless UI/UX, and technical precision. He blends frontend development with a strong grasp of marketing tech and automation, resulting in beautifully crafted, user-centric platforms that actually perform.",
   },
 ];
 
@@ -285,5 +285,11 @@ export const trustedBy = [
   },
   {
     avatar: "/images/fawhitee.png",
+  },
+  {
+    avatar: "/images/ff-1.png",
+  },
+  {
+    avatar: "/images/capital.svg",
   },
 ];
