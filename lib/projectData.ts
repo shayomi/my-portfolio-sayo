@@ -77,7 +77,29 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 4,
+    name: "Market Expansion Strategist Agent",
+    category: "AI Agent",
+    year: "2025",
+    image: "/images/mesa.jpg",
+    website: "https://mesa-ashen.vercel.app/",
+    github: "private",
+    slug: "mesa",
+    problem:
+      "Businesses often struggle to evaluate and plan entry into new markets due to fragmented data, lack of structured analysis, and limited in-house expertise. Generating comprehensive reports like SWOT, PESTLE, and competitive analysis usually requires consultants and significant resources.",
+    approach:
+      "The app automates market expansion strategy creation using a pipeline of Clerk authentication, MongoDB for business data storage, and OpenAI GPT-4.1 for generating structured, consultant-style reports. Each request pulls company details from the database, feeds them into a carefully engineered prompt, and returns a full analysis with sections such as Market Overview, Entry Strategies, PESTLE, SWOT, and Competitive Landscape. Reports are automatically saved and associated with the user for future reference.",
+    result:
+      "Users gain immediate access to in-depth, personalized market expansion strategy reports without the need for external consultants. This empowers businesses of all sizes to make informed strategic decisions faster, at lower cost, and with a professional, data-backed framework stored in their dashboard for ongoing use.",
+    techStack: ["Next.js", "TailwindCSS", "MongoDB", "Clerk", "OpenAI GPT-4.1"],
+    gallery: [
+      "/images/market-expansion/1.jpg",
+      "/images/market-expansion/2.jpg",
+      "/images/market-expansion/3.jpg",
+    ],
+  },
+  {
+    id: 5,
     name: "Founders Resource",
     category: "Legal Assets / Tech",
     year: "2025",
@@ -99,11 +121,12 @@ export const projects = [
       "/images/nimble-media/4.jpg",
     ],
   },
+
   {
-    id: 4,
+    id: 6,
     name: "Capital State",
     category: "Infoweb",
-    year: "2022",
+    year: "2023",
     image: "/images/capstate.jpg",
     website: "https://capitalstatefarm.com",
     github: "https://github.com/shayomi/capital-state-farm",
@@ -123,10 +146,10 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     name: "Event Spaces",
     category: "Event management platform",
-    year: "2025",
+    year: "2024",
     image: "/images/eventspace.jpg",
     website: "http://eventspaces.vercel.app",
     github: "https://github.com/shayomi/Eventspace",
@@ -154,7 +177,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     name: "Janes Auction",
     category: "Art auction",
     year: "2024",

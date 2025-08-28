@@ -10,7 +10,7 @@ import { fadeIn } from "../shared/Variant";
 import { Button } from "../ui/button";
 
 const SelectedWorks = () => {
-  const topProjects = projects.slice(0, 3); // show only first 3
+  const topProjects = projects.slice(0, 4); // show only first 3
 
   return (
     <motion.section className="bg-black mt-36">
@@ -114,39 +114,71 @@ const SelectedWorks = () => {
             </Link>
           </motion.div>
         </div>
-
-        {/* Bottom full-width card */}
-        <motion.div
-          variants={fadeIn("up", "tween", 0.6, 0.7)}
-          initial="hidden"
-          whileInView="show"
-          exit="show"
-          className="bg-gray-800 rounded-md border w-full md:w-[80%] mx-auto border-gray-600 p-6 mt-16  block"
-        >
-          <Link href={`/work/${topProjects[2].slug}`}>
-            <div className="flex flex-col gap-4">
-              <img
-                src={topProjects[2].image}
-                alt={topProjects[2].name}
-                className="h-[500px] w-full object-cover transition-transform duration-500 ease-in-out hover:scale-95"
-              />
-              <Typography variant="h4" className="text-white font-medium">
-                {topProjects[2].name}
-              </Typography>
-              <div className="flex flex-row gap-4 justify-between">
-                <Typography variant="smallText" className="text-white">
-                  {topProjects[2].category}
+        <div className="flex flex-col md:flex-row gap-6 items-start justify-between mt-36">
+          {/* Bottom full-width card */}
+          <motion.div
+            variants={fadeIn("left", "tween", 0.8, 0.7)}
+            initial="hidden"
+            whileInView="show"
+            exit="show"
+            className="bg-gray-800 w-full md:w-[60%] rounded-md border border-gray-600 p-6 "
+          >
+            <Link href={`/work/${topProjects[2].slug}`}>
+              <div className="flex flex-col gap-4">
+                <img
+                  src={topProjects[2].image}
+                  alt={topProjects[2].name}
+                  className="h-[400px] w-full object-cover transition-transform duration-500 ease-in-out hover:scale-95"
+                />
+                <Typography variant="h4" className="text-white font-medium">
+                  {topProjects[2].name}
                 </Typography>
-                <Typography
-                  variant="smallText"
-                  className="text-white/70 font-normal"
-                >
-                  @{topProjects[2].year}
-                </Typography>
+                <div className="flex flex-row gap-4 justify-between">
+                  <Typography variant="smallText" className="text-white">
+                    {topProjects[2].category}
+                  </Typography>
+                  <Typography
+                    variant="smallText"
+                    className="text-white/70 font-normal"
+                  >
+                    @{topProjects[2].year}
+                  </Typography>
+                </div>
               </div>
-            </div>
-          </Link>
-        </motion.div>
+            </Link>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", "tween", 0.6, 0.7)}
+            initial="hidden"
+            whileInView="show"
+            exit="show"
+            className="bg-gray-800 w-full md:w-[40%] rounded-md border border-gray-600 p-6 "
+          >
+            <Link href={`/work/${topProjects[3].slug}`}>
+              <div className="flex flex-col gap-4">
+                <img
+                  src={topProjects[3].image}
+                  alt={topProjects[3].name}
+                  className="h-[400px] md:h-[750px] w-full object-cover transition-transform duration-500 ease-in-out hover:scale-95"
+                />
+                <Typography variant="h4" className="text-white font-medium">
+                  {topProjects[3].name}
+                </Typography>
+                <div className="flex flex-row gap-4 justify-between">
+                  <Typography variant="smallText" className="text-white">
+                    {topProjects[3].category}
+                  </Typography>
+                  <Typography
+                    variant="smallText"
+                    className="text-white/70 font-normal"
+                  >
+                    @{topProjects[3].year}
+                  </Typography>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </motion.section>
   );

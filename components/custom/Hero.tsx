@@ -44,7 +44,7 @@ const VideoIntro = () => {
             variant="h2"
             className="font-bold text-white max-w-[700px] leading-[64px] text-start"
           >
-            Transforming ideas into visual masterpieces
+            Transforming bold ideas into seamless tech and design solutions.
           </Typography>
 
           <Typography
