@@ -30,9 +30,9 @@ const Footer = () => {
               />
 
               <Typography variant="p" className="text-white">
-                Self driven and Highly Motivated developer with 4+ years of
-                experience in frontend development using React Js, Next Js ,
-                javascript, html/css and UI designs
+                Full-stack Next.js engineer building AI-native products with
+                agent workflows, browser automation, open-source packages,
+                Supabase infrastructure, and production observability.
               </Typography>
             </div>
             <div className=" py-8 text-white">
@@ -48,7 +48,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link href="#service" className="text-white hover:underline">
-                    Service
+                    Services
                   </Link>
                 </li>
                 <li>
@@ -82,7 +82,7 @@ const Footer = () => {
 
           <div className="py-4 flex justify-center text-white">
             <Typography variant="smallText" className="text-white font-normal">
-              2024 &#169; Sayo Adegoroye. All rights reserved
+              2026 &#169; Sayo Adegoroye. All rights reserved
             </Typography>
           </div>
         </div>

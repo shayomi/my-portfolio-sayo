@@ -8,7 +8,7 @@ const FooterContact: React.FC = () => {
       <div className="flex flex-col gap-y-2  ">
         <div>
           <Typography variant="h4" className="text-white font-bold ">
-            CONTACT ME
+            CONTACT
           </Typography>
         </div>
 
@@ -25,7 +25,7 @@ const FooterContact: React.FC = () => {
       <div className="flex flex-col gap-y-2 ">
         <div>
           <Typography variant="h4" className="text-white font-bold">
-            FOLLOW US
+            FOLLOW ME
           </Typography>
         </div>
 

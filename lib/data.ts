@@ -30,13 +30,13 @@ export const socialData: SocialMedia[] = [
 
 export const heroData = [
   {
-    title: "Web Development",
+    title: "Full-Stack Next.js",
   },
   {
-    title: "UI / UX ",
+    title: "AI Agents & Subagents",
   },
   {
-    title: "Visual Designs",
+    title: "Automation & Testing",
   },
 ];
 
@@ -62,11 +62,11 @@ export const portfolioData = [
   {
     icon: "/images/accelerate-africa.png",
     title: "Accelerate Africa ",
-    tags: "Information App",
+    tags: "Agentic Founder Platform",
     website: "http://acceler8.africa",
     github: "https://github.com/shayomi/accelerate-website-develop",
     description:
-      "Accelerate is a platform built with Next.js, Strapi, and AWS, designed to streamline and enhance user experiences with scalable solutions, flexible content management, and reliable cloud infrastructure.",
+      "Accelerate Africa is now an agentic platform for founders and coaches, enabling structured mentoring, weekly submissions, and story mapping with automated workflows, observability, and reliable data infrastructure.",
   },
   {
     icon: "/images/capitalstatefarm.png",
@@ -196,23 +196,23 @@ export const reviewData = [
   {
     avatar: "/images/seun.jpeg",
     name: "Seun Akoyon",
-    title: "Run technology",
+    title: "Run Technology",
     review:
-      "Sayomi is an amazing developer who is very diligent and keep to time. We have worked on quite a lot of projects together and he never disappoints.His web designs are topnotch, easy to navigate and interactive",
+      "Sayo is reliable, fast, and deeply technical. He consistently ships modern product experiences and communicates clearly through every delivery cycle.",
   },
   {
     avatar: "/images/conah.jpeg",
     name: "Comfort Onah",
     title: "Independent",
     review:
-      "Sayo is my go to guy when it comes to web development and designs.His time management is something i love about him and also his commitments to work. ",
+      "When we need execution, Sayo delivers. He combines product thinking, clean implementation, and strong ownership from planning to release.",
   },
   {
     avatar: "/images/abbey.jpeg",
     name: "Ismail Olasunkanmi",
-    title: "Deveote CEO",
+    title: "Devote CEO",
     review:
-      "Sayo is my mentee and i can tell you he is a great developer. Always learning and improving , keeping up with latest technology at all cost. He is very intelligent and resourceful",
+      "Sayo keeps raising his engineering bar. He learns fast, applies modern tooling quickly, and builds practical solutions that teams can trust in production.",
   },
   {
     avatar: "/images/chiye.png",
@@ -224,29 +224,29 @@ export const reviewData = [
   {
     avatar: "/images/conah.jpeg",
     name: "Temitayo Noamesi",
-    title: "independent",
+    title: "Independent",
     review:
-      "Working with Sayomi has been a game-changer. He brings creativity, discipline, and a results-driven mindset to every project. His ability to combine frontend engineering with AI tools, automation, and design thinking makes him a rare talent. You can always count on him to ship high-quality work that users love and businesses benefit from.",
+      "Working with Sayo has been a game-changer. He combines frontend quality, AI workflow design, and automation discipline to ship features users actually adopt.",
   },
   {
     avatar: "/images/ife.webp",
     name: "Ife Adepoju",
     title: "Founders Resource",
     review:
-      "I’ve had the pleasure of working with Sayomi on several projects, and what stands out every time is his sharp eye for design, seamless UI/UX, and technical precision. He blends frontend development with a strong grasp of marketing tech and automation, resulting in beautifully crafted, user-centric platforms that actually perform.",
+      "Sayo brings structure to complex builds. From technical planning to delivery, he uses modern AI-assisted workflows to keep teams focused and shipping.",
   },
 ];
 
 export const ContactData = [
   {
     icon: "/images/call.svg",
-    title: "Call me at",
+    title: "Call or WhatsApp",
     description: "+447349722273",
     link: "https://wa.link/37lp8a",
   },
   {
     icon: "/images/mail.svg",
-    title: "Send me an email",
+    title: "Email for projects",
     description: "adegoroyesayotosin@gmail.com",
     link: "https://mailto:adegoroyesayotosin@gmail.com",
   },

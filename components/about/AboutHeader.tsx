@@ -36,13 +36,13 @@ const AboutHeader = () => {
             className="flex flex-col gap-2"
           >
             <Typography variant="h3" className="text-white">
-              2020-25
+              2020-26
             </Typography>
             <Typography variant="h4" className="text-white max-w-xl">
-              We&apos;re a team of creative thinkers, designers, and strategists
+              I build full-stack systems where product engineering, AI agents,
+              and automation work together
               <span className="text-white/60">
-                {" "}
-                dedicated to building brands that stand out.
+                to help founders move from idea to reliable execution.
               </span>
             </Typography>
           </motion.div>

@@ -8,37 +8,37 @@ import { fadeIn } from "../shared/Variant";
 const services = [
   {
     id: "[01]",
-    title: "Web Design & Development",
+    title: "Full-Stack Product Engineering",
     details:
-      "/ Responsive design / High-performing websites / Custom designs / Automations",
+      "/ Next.js architecture / TypeScript systems / API integration / Performance-first delivery",
     image: "/images/webdev.png",
   },
   {
     id: "[02]",
-    title: "AI Agents & Automations",
+    title: "AI Agents and Subagents",
     details:
-      "/ Workflow automation / AI integration / Personalized agent design / Business optimization",
+      "/ OpenCode workflows / Claude Code operations / OpenClaw orchestration / AI automation loops",
     image: "/images/aiagent.webp",
   },
   {
     id: "[03]",
-    title: "UI/UX Design",
+    title: "AI Workflow and Automation Design",
     details:
-      "/ User-centric approach / Seamless navigation / Intuitive interfaces",
+      "/ Task decomposition / Agent handoff patterns / Team-ready execution playbooks",
     image: "/images/uiux.jpg",
   },
   {
     id: "[04]",
-    title: "Tech Strategy",
+    title: "Quality, Testing, and Reliability",
     details:
-      "/ Scalable architecture / Technology stack planning / Strategic consultation",
+      "/ Playwright browser testing / Regression automation / Sentry monitoring / Release confidence",
     image: "/images/strategy.jpg",
   },
   {
     id: "[05]",
-    title: "No-Code Specialist",
+    title: "Open Source and Package Development",
     details:
-      "/ Fast MVP development / Webflow, Framer, Bubble expertise / Cost-effective delivery",
+      "/ Internal tooling / Reusable packages / Developer experience / Documentation systems",
     image: "/images/nocode.jpg",
   },
 ];

@@ -40,48 +40,44 @@ const Brief = () => {
           >
             <h1 className="background-text flex justify-end mb-6">03-06</h1>
             <Typography variant="h2">
-              {" "}
-              From sleek website to effective AI agents and round the clock
-              automations, I have spent half a decade helping business{" "}
+              Over the last five years, I have helped teams ship modern software
+              systems powered by strong product engineering and AI execution.
               <span className="text-gray-500">
-                turn heads, win hearts and leave lasting impression
+                I design, build, test, and automate end-to-end platforms that
+                scale from MVP to production.
               </span>{" "}
             </Typography>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
               <div className="flex flex-row items-center gap-2">
                 <FaCompass className="fill-red-600 stroke-red-500" />
-                <Typography variant="h6">
-                  Creative and modern designs
-                </Typography>
+                <Typography variant="h6">AI workflow architecture</Typography>
               </div>
               <div className="flex flex-row items-center gap-2">
                 <FaBuilding className="fill-red-600 stroke-red-500" />
                 <Typography variant="h6">
-                  Scalable and secure architecture
+                  Scalable full-stack platforms
                 </Typography>
               </div>
               <div className="flex flex-row items-center gap-2">
                 <FaUser className="fill-red-600 stroke-red-500" />
-                <Typography variant="h6">Intuitive user experiences</Typography>
+                <Typography variant="h6">Product-focused UX systems</Typography>
               </div>
               <div className="flex flex-row items-center gap-2">
                 <FaDiceD20 className="fill-red-600 stroke-red-500" />
                 <Typography variant="h6">
-                  Intelligent automation systems
+                  Agent and subagent orchestration
                 </Typography>
               </div>
               <div className="flex flex-row items-center gap-2">
                 <FaDesktop className="fill-red-600 stroke-red-500" />
                 <Typography variant="h6">
-                  Responsive and accessible interfaces
+                  Playwright browser and AI testing
                 </Typography>
               </div>
               <div className="flex flex-row items-center gap-2">
                 <FaDatabase className="fill-red-600 stroke-red-500" />
-                <Typography variant="h6">
-                  Data-driven, goal-oriented solutions
-                </Typography>
+                <Typography variant="h6">Database and Security</Typography>
               </div>
             </div>
           </motion.div>

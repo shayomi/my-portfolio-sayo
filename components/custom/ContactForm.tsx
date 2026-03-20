@@ -42,7 +42,7 @@ const ContactForm = () => {
   return (
     <div className="mt-6">
       <Typography variant="h4" className="text-white font-bold">
-        Send me a message
+        Start your build sprint
       </Typography>
 
       <Form {...form}>
@@ -55,7 +55,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="First Name"
+                      placeholder="Your name"
                       className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                       {...field}
                     />
@@ -72,7 +72,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="Your Phone Number"
+                      placeholder="Phone number or WhatsApp"
                       className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                       {...field}
                     />
@@ -90,7 +90,7 @@ const ContactForm = () => {
                   <FormItem>
                     <FormControl>
                       <Input
-                        placeholder="Email"
+                        placeholder="Work email"
                         type="email"
                         className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                         {...field}
@@ -111,7 +111,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormControl>
                     <Textarea
-                      placeholder="What would you like me to do for you?"
+                      placeholder="Share your product, AI workflow, or automation goal"
                       className="px-2.5 bg-white border-[1px] border-primary bg-opacity-85 text-foreground placeholder:text-black font-medium placeholder:font-light"
                       {...field}
                     />
@@ -124,7 +124,7 @@ const ContactForm = () => {
 
           <div>
             <Button className="h-12 w-[120px] bg-red-600 mt-4" type="submit">
-              Send message
+              Send brief
             </Button>
           </div>
         </form>

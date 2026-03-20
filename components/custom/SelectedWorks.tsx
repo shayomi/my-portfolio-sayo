@@ -34,8 +34,7 @@ const SelectedWorks = () => {
 
             <div className="flex flex-col gap-3 items-start">
               <Typography variant="h4" className="font-medium text-white">
-                {" "}
-                This is not all Ive got
+                More production case studies
               </Typography>
               <Link href="/work">
                 <Button variant="default" size="lg">

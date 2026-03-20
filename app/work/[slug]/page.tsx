@@ -21,7 +21,7 @@ export default function WorkDetail({ params }: { params: { slug: string } }) {
               variant="h6"
               className="text-red-600 px-4 hover:underline cursor-pointer"
             >
-              back home
+              back to portfolio
             </Typography>
           </Link>
           <h1 className="text-5xl font-bold mb-6 px-2 mt-12">{project.name}</h1>

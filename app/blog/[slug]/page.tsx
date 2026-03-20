@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { blogListData } from "@/components/blog/BlogData";
 import Header from "@/components/shared/Header";
 import { Typography } from "@/components/ui/typography";
+import Link from "next/link";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const blog = blogListData.find((p) => p.slug === params.slug);
@@ -16,6 +17,15 @@ export default function Page({ params }: { params: { slug: string } }) {
 
       <section className="bg-black py-2 px-4 text-white mt-[-58px]">
         <div className="max-w-4xl mx-auto space-y-8">
+          <Link href="/blog" className="inline-block">
+            <Typography
+              variant="h6"
+              className="text-red-600 hover:underline cursor-pointer"
+            >
+              back to blogs
+            </Typography>
+          </Link>
+
           <Typography variant="h2" className="font-bold">
             {" "}
             {blog.title}

@@ -44,15 +44,16 @@ const VideoIntro = () => {
             variant="h2"
             className="font-bold text-white max-w-[700px] leading-[64px] text-start"
           >
-            Transforming bold ideas into seamless tech and design solutions.
+            Building AI-native products with Next.js, agents, and automation.
           </Typography>
 
           <Typography
             variant="h4"
             className="font-medium text-white mt-4 max-w-[700px] text-start"
           >
-            Web development / AI agents / Automations / UI-UX Designs / Tech
-            strategist / Sustainability Specialist
+            Full-stack Next.js / AI workflows / Agent and subagent systems /
+            Open source packages / Playwright browser testing / Supabase and
+            Sentry operations
           </Typography>
 
           <div className="bg-white/10 backdrop-blur-md justify-start  border border-gray-700 px-4 py-1 ">
@@ -61,7 +62,7 @@ const VideoIntro = () => {
                 variant="smallText"
                 className="font-normal text-white"
               >
-                Get started
+                Start a project
               </Typography>
               <div className="bg-red-500 p-3">
                 <FaArrowRight />{" "}

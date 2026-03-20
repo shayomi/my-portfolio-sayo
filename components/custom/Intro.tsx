@@ -34,7 +34,7 @@ const Intro = () => {
             whileHover={{ scale: 1.1 }}
             transition={transition1}
           >
-            Hi there
+            Welcome
           </motion.h2>
           <motion.h2
             className="text-[36px]"
@@ -45,7 +45,7 @@ const Intro = () => {
             whileHover={{ scale: 1.1 }}
             transition={transition1}
           >
-            I&apos;m Sayo Adegoroye
+            I&apos;m Sayo, an AI-native full-stack engineer
           </motion.h2>
         </motion.div>
       </div>

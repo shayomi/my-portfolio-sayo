@@ -35,9 +35,10 @@ const BlogHeader = () => {
             exit="show"
             className="flex flex-col gap-2"
           >
-            <Typography variant="h4" className="text-white max-w-xl">
-              Sometimes i share my mind
-            </Typography>
+              <Typography variant="h4" className="text-white max-w-xl">
+                Notes on AI-native engineering, agents, testing, and modern
+                product delivery.
+              </Typography>
           </motion.div>
         </div>
       </div>

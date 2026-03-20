@@ -41,22 +41,20 @@ const About = () => {
               ABOUT ME
             </h1>
             <Typography variant="p" className="text-white text-start ">
-              Throughout my career, I&apos;ve collaborated with leading
-              organizations like Techclout Africa, Run Technology, Nexapluxe,
-              and Future Africa, honing my skills in JavaScript, HTML/CSS,
-              React.js, Next.js, Tailwind CSS, TypeScript, and Node.js.
+              I have worked across product teams and founder-led companies,
+              building modern web platforms with Next.js, TypeScript, Tailwind,
+              and scalable backend integrations.
             </Typography>
             <Typography variant="p" className="text-white text-start ">
-              These partnerships have allowed me to tackle diverse
-              challenges—from building scalable front-end systems to integrating
-              complex back-end services—strengthening both my technical and
-              strategic capabilities.
+              Today, my stack is AI-native: OpenCode and Claude Code workflows,
+              agent and subagent orchestration with OpenClaw, automated browser
+              quality checks with Playwright, and production monitoring with
+              Sentry.
             </Typography>
             <Typography variant="p" className="text-white text-start ">
-              Working across industries and teams, I&apos;ve developed a deep
-              understanding of modern web development practices, with a strong
-              focus on clean code, performance optimization, and user-first
-              design.
+              I also build on Supabase for data, auth, and realtime features,
+              while creating reusable open-source packages and internal tooling
+              that help teams ship faster with confidence.
             </Typography>
           </motion.div>
         </motion.div>

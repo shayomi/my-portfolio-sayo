@@ -1,48 +1,137 @@
 export const blogListData = [
   {
     id: 1,
-    date: "June,17 2024",
-    title: "Is It My Future or Our Future?",
-    slug: "Is-It-My-Future-or-Our-Future",
+    date: "March 20, 2026",
+    title: "From Prompting to Production: Designing Real AI Workflows",
+    slug: "from-prompting-to-production-designing-real-ai-workflows",
     image: "/images/ai-future.png",
     paragraph1:
-      "The rise of AI has triggered something between a code crisis and a philosophical meltdown for developers. Every week, a new AI tool promises to replace hours of work with a few prompts. Suddenly, that senior developer who took a week to build a form is being outpaced by an AI that did it in 30 seconds,with tests. It's no longer just about job security; it's about relevance. Are we still the creators, or are we just operators of increasingly intelligent machines?",
+      "Most teams still approach AI as a feature add-on: write a prompt, call a model, and hope for magic. That method works for demos but breaks in production because real software needs reliability, versioning, and clear ownership. The real leverage of AI does not come from a single clever prompt; it comes from designing a workflow where context, constraints, and quality checks are first-class parts of the system.",
     paragraph2:
-      "Let’s not panic just yet. Yes, AI can autocomplete your code and even scaffold a decent SaaS app, but it doesn’t understand nuance, context, or product-market fit. It doesn’t know your users, and it doesn’t care about accessibility, edge cases, or whether your app actually solves a real problem. Developers aren’t just coders; we’re problem solvers, designers of logic, and deeply curious humans who *actually read error messages* (well, sometimes).",
+      "In practical delivery, I structure AI work into phases: task framing, execution, verification, and feedback loops. Task framing defines what success looks like and what the model must not do. Execution is tightly scoped, often delegated to one agent with a clear contract. Verification uses tests, diffs, and review checkpoints. Feedback loops capture what failed and feed it back into the next run. This process turns AI from a one-shot assistant into a repeatable contributor.",
     paragraph3:
-      "Instead of fearing AI, maybe it's time to build *with* it. Learn how to prompt better. Combine your understanding of human problems with AI’s power to automate the repetitive stuff. Master the craft of thinking clearly, debugging deeply, and designing things that don’t just function, but resonate.",
+      "OpenCode and Claude Code are especially useful when you pair them with strong context files and narrow objectives. OpenCode helps with grounded local execution, while Claude Code is excellent for reasoning-heavy implementation and refactoring decisions. The key is not tool worship; it is orchestration discipline. A strong system can survive tool changes because its process remains stable.",
     conclusion:
-      "The future isn't a solo act. It’s not just your future or mine, it’s a collaborative, AI-assisted one. So embrace the shift. Keep building, keep learning, and remember: AI might know how to code, but it still doesn’t know the feeling of finally fixing that one elusive bug after 4 hours, 3 StackOverflow threads, and a good cry. And that’s your edge.",
+      "If your goal is business impact, optimize workflow design before prompt style. Prompts matter, but operations multiply value. The teams winning with AI are not the ones with the flashiest outputs; they are the ones with repeatable pipelines, measurable quality, and a culture of continuous improvement.",
   },
   {
     id: 2,
-    date: "June,17 2024",
-    title: "The Dev-Business Gap: Bridge or Bulldoze?",
-    slug: "The-DevBusiness-Gap-Bridge-or-Bulldoze",
+    date: "March 20, 2026",
+    title: "Agent + Subagent Systems with OpenCode, Claude Code, and OpenClaw",
+    slug: "agent-subagent-systems-with-opencode-claude-code-and-openclaw",
     image: "/images/biz-bridge.png",
     paragraph1:
-      "Here’s the age-old tech dilemma: business teams talk in visions, dreams, and OKRs. Developers talk in endpoints, bugs, and commit logs. Somewhere in between lies a vast chasm of miscommunication, where 'Can we just tweak this real quick?' translates into 'This will break production by Friday.' It’s not hostility, it’s just different planets trying to build the same spaceship.",
+      "Single-agent setups are useful for small tasks, but complex product work needs role separation. In larger builds, one model handling everything causes context overload, weaker focus, and inconsistent output quality. A better model is to design agent systems the way we design engineering teams: one coordinator and specialized executors with clear boundaries.",
     paragraph2:
-      "The question is, do we need more people to bridge the gap, product managers, business analysts, translators of buzzwords, or can AI become the bridge? Sure, AI can summarize meetings, draft emails, and turn user stories into wireframes, but it still doesn’t understand that 'ASAP' is not a timeline and 'simple' is never simple when it comes to tech.",
+      "In this setup, a parent agent handles planning and decomposition. Subagents handle focused tasks such as UI implementation, API integration, QA generation, docs updates, and release notes. OpenCode is great for controlled local execution loops. Claude Code handles deep reasoning and architecture-level refactors. OpenClaw adds orchestration logic so handoffs between agents become predictable and traceable.",
     paragraph3:
-      "Maybe the real solution isn’t *more people* or *more AI*. Maybe it’s *better understanding*. Developers need to zoom out from the codebase and understand business goals. Business leaders need to stop treating devs like vending machines that take specs and return apps. We need more cross-functional curiosity and fewer passive-aggressive Jira tickets.",
+      "The biggest unlock is role contracts. Every role should define: what inputs it accepts, what outputs it returns, what files it can touch, and what confidence checks it must run before handoff. Once these contracts are explicit, agent systems become easier to debug, easier to scale, and easier for humans to trust.",
     conclusion:
-      "At the end of the day, building great products is a team sport. AI can help, yes, but it can’t replace empathy, human alignment, or a solid meme shared in a stand-up. So let’s stop yelling across the canyon and start building real bridges, ones that don’t 404.",
+      "Multi-agent delivery does not eliminate human engineering judgment. It amplifies it. When role design is clear, you get faster iteration, fewer execution blind spots, and a system that behaves more like a reliable product team than a random prompt experiment.",
   },
   {
     id: 3,
-    date: "June,17 2024",
-    title:
-      "From Founder Energy to Fat Checks: The Pivot That Changed Everything",
-    slug: "From-Founder-Energy-to-Fat-Checks-The-Pivot-That-Changed-Everything",
+    date: "March 20, 2026",
+    title: "Modern Delivery Stack: Playwright, Sentry, Supabase, and Automation",
+    slug: "modern-delivery-stack-playwright-sentry-supabase-and-automation",
     image: "/images/founder.png",
     paragraph1:
-      "It always starts the same: a founder with spark-in-the-eyes energy, running on hope and Red Bull, ready to change the world. Maybe they had a bad experience with an app and thought, 'I can do this better.' Or maybe they just wanted to quit their job and wear hoodies forever. Either way, the origin story is romantic. But then... the funding comes.",
+      "Shipping quickly is easy. Shipping quickly without breaking trust is hard. That is why modern product teams need an integrated delivery stack where testing, observability, and data operations are connected from day one. You should not wait for scale before adding reliability systems. Reliability is the system that enables scale.",
     paragraph2:
-      "First, it’s seed money, exciting! New laptops, paid Zoom, maybe even a WeWork desk. Then comes the Series A. Meetings get longer. Founders now speak in acronyms. The product roadmap looks like a spider diagram written by a caffeinated MBA. The dream shifts: from *solving a problem* to *delivering ROI*. It’s subtle, then suddenly not. The same founder who once debated button colors now debates acquisition strategies.",
+      "Playwright gives teams confidence on real user journeys: onboarding, payments, dashboards, and high-value flows. Sentry adds runtime truth by capturing client and server errors with context you can act on immediately. Supabase provides a practical backbone for auth, relational data, storage, and realtime features without forcing teams into heavy platform complexity too early.",
     paragraph3:
-      "This isn’t always a bad thing. Structure can bring scale. A good investor can challenge your blind spots. But the danger lies in dilution, not just of equity, but of purpose. When the mission bends too much to fit market trends or the loudest VC, something breaks. That early fire gets replaced with quarterly goals and OKRs that sound like they came from a leadership retreat in a desert.",
+      "When these pieces are automated, release quality rises naturally. Pull requests can trigger test suites, deployment gates, migration checks, and alert routing. Teams stop guessing and start operating with evidence. The result is fewer emergency rollbacks, faster bug triage, and better collaboration between product, engineering, and operations.",
     conclusion:
-      "The real test of a founder isn’t just how they start, but how they evolve. Can they take the big check and still build the weird, wonderful thing they believed in? Or will they end up launching ‘AI for synergy optimization in supply chains’? The money’s great,but the mission’s greater. Don’t forget what got you here in the first place: curiosity, courage, and chaos.",
+      "A modern stack is not about collecting tools; it is about composing a loop that protects velocity. Build fast, test thoroughly, observe continuously, and improve with data. That loop is what turns shipping into sustainable performance.",
+  },
+  {
+    id: 4,
+    date: "March 20, 2026",
+    title: "Venture Building as a Service: From Idea to Execution Rhythm",
+    slug: "venture-building-as-a-service-from-idea-to-execution-rhythm",
+    image: "/images/blog4.png",
+    paragraph1:
+      "Many startups fail before product-market fit not because founders lack ideas, but because execution systems are weak. Venture Building as a Service solves this by combining strategy, product engineering, and operational cadence into one managed lane. It gives founders a practical engine for momentum instead of fragmented advisory sessions and disconnected freelancers.",
+    paragraph2:
+      "A strong VBaaS model starts with decision architecture: define the core user pain, the riskiest assumptions, and the shortest path to validated value. Then map those assumptions into sprint-sized delivery units that can be measured weekly. This creates clarity for founders and aligns product work with actual business outcomes.",
+    paragraph3:
+      "AI workflows make this model even stronger. Agents handle repetitive build operations, documentation updates, and quality pre-checks while humans focus on strategic calls, customer conversations, and narrative direction. Instead of replacing teams, AI gives lean venture squads more operating bandwidth.",
+    conclusion:
+      "Venture building is no longer just an incubation idea; it is an execution discipline. The founders who win are those who combine rapid iteration with operating rigor, and a service model can provide both when structured correctly.",
+  },
+  {
+    id: 5,
+    date: "March 20, 2026",
+    title: "Automation First Teams: Replacing Busywork with Output",
+    slug: "automation-first-teams-replacing-busywork-with-output",
+    image: "/images/blog5.png",
+    paragraph1:
+      "Software teams rarely fail because they are lazy; they fail because they are overloaded with operational friction. Status reporting, repeated QA steps, changelog writing, release coordination, and incident triage often consume the same energy needed for actual product development. Automation-first teams treat this friction as a product problem and systematically remove it.",
+    paragraph2:
+      "The highest-value automations are usually simple: test triggers on PR open, formatted release notes on merge, environment checks before deployment, and incident notifications with ownership tags. Each automation saves small pockets of attention. Combined over months, those savings become strategic capacity.",
+    paragraph3:
+      "The danger is automation without design. If nobody owns failure conditions, automation becomes silent debt. Every workflow should define a trigger, expected output, timeout behavior, and escalation path. Good automation is transparent, observable, and easy to override when business context changes.",
+    conclusion:
+      "Automation should not make teams feel less in control. It should make quality easier to maintain and decision-making easier to focus. When done right, teams move from task juggling to outcome delivery.",
+  },
+  {
+    id: 6,
+    date: "March 20, 2026",
+    title: "How to Design Agent Roles That Actually Scale",
+    slug: "how-to-design-agent-roles-that-actually-scale",
+    image: "/images/blog6.png",
+    paragraph1:
+      "A common mistake in AI adoption is using one giant general-purpose agent for everything. It feels efficient at first, but quickly becomes fragile as codebases grow and tasks become cross-functional. Scalable systems rely on role specialization, just like high-performing product teams.",
+    paragraph2:
+      "A practical role model includes planner, implementer, reviewer, and verifier. The planner clarifies scope and outputs. The implementer writes or updates code. The reviewer checks architecture and consistency. The verifier runs tests and validates behavior against acceptance criteria. Each role is easier to evaluate because success is clearly defined.",
+    paragraph3:
+      "To scale this model, enforce strict interfaces between roles. Outputs should be structured, not conversational. Handoffs should include assumptions and unresolved risks. Human operators should be able to inspect any stage and understand exactly what changed and why. This makes failures diagnosable instead of mysterious.",
+    conclusion:
+      "Agent scale is less about model power and more about system architecture. Role clarity, deterministic handoffs, and explicit quality gates are what make AI operations dependable in production environments.",
+  },
+  {
+    id: 7,
+    date: "March 20, 2026",
+    title: "Building AI Features Without Killing Product Focus",
+    slug: "building-ai-features-without-killing-product-focus",
+    image: "/images/blog4.png",
+    paragraph1:
+      "AI feature roadmaps can become noisy very quickly. Teams chase capabilities because they are impressive, not because they solve a painful workflow for users. The result is bloat: more features, less value. Product focus starts by identifying one expensive user problem and designing AI as an accelerator for that path.",
+    paragraph2:
+      "A good AI feature improves one of four things: speed, accuracy, confidence, or accessibility. If it does not improve at least one of these with measurable evidence, it is likely a distraction. Teams should test this early with clear baseline metrics before investing in heavy implementation.",
+    paragraph3:
+      "This is where founder discipline matters. Every feature request should answer: what user decision becomes easier, what workflow becomes faster, and what business metric should move if this works? Keeping these questions visible protects teams from trend-driven product drift.",
+    conclusion:
+      "The strongest AI products are not built by adding intelligence everywhere. They are built by placing intelligence where it removes real friction and creates compounding user trust.",
+  },
+  {
+    id: 8,
+    date: "March 20, 2026",
+    title: "Package-Driven Engineering: Why Reusable Tools Win",
+    slug: "package-driven-engineering-why-reusable-tools-win",
+    image: "/images/blog5.png",
+    paragraph1:
+      "As teams mature, the same workflows appear across projects: auth adapters, logging contracts, design tokens, test fixtures, and deployment scripts. Rebuilding these from scratch wastes time and creates inconsistency. Package-driven engineering converts repeated patterns into reusable assets that improve every future build.",
+    paragraph2:
+      "Internal packages are especially powerful for AI-enabled teams because they preserve standards while increasing speed. Instead of prompting agents from zero each time, you can direct them to proven package interfaces and expected usage patterns. This dramatically reduces drift and helps maintain a coherent codebase.",
+    paragraph3:
+      "The packaging mindset also improves engineering culture. You are forced to document assumptions, define APIs cleanly, and think about backward compatibility. Those habits naturally improve quality in both private tooling and public open-source contributions.",
+    conclusion:
+      "Reusable packages are not just about code reuse; they are about institutional memory. They capture what your team has learned and turn it into leverage that compounds with every release.",
+  },
+  {
+    id: 9,
+    date: "March 20, 2026",
+    title: "The AI Delivery Loop: Plan, Build, Test, Observe, Improve",
+    slug: "the-ai-delivery-loop-plan-build-test-observe-improve",
+    image: "/images/blog6.png",
+    paragraph1:
+      "High-performing teams think in loops, not milestones. Milestones are useful for communication, but loops are what improve product quality over time. In AI-assisted engineering, the most effective loop is simple: plan clearly, build with scoped execution, test critical paths, observe production behavior, and feed insights back into the next cycle.",
+    paragraph2:
+      "Planning must define constraints and acceptance criteria before agents start writing code. Building should be modular, with each task mapped to a clear owner or subagent role. Testing should prioritize the paths users depend on most, not just coverage percentages. Observation should focus on live signals that represent user trust, not vanity analytics.",
+    paragraph3:
+      "Teams that skip observation usually overestimate release quality. Without telemetry, you are guessing. With tools like Playwright, Sentry, and Supabase event tracking, you can close the loop quickly: detect issues early, trace root causes, and ship fixes while context is still fresh.",
+    conclusion:
+      "AI increases output speed, but only disciplined loops convert speed into durable advantage. Optimize the full delivery cycle, and your team can scale quality and velocity at the same time.",
   },
 ];

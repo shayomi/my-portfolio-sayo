@@ -24,7 +24,7 @@ const WorkHeader = () => {
             <h1 className="background-text text-white">MY</h1>
             <div className="flex flex-row gap-2 items-center">
               <img src="/images/line.png" alt="" className="w-[90px]" />
-              <h1 className="background-text text-white">PROJECTS</h1>
+              <h1 className="background-text text-white">CASE STUDIES</h1>
             </div>
           </motion.div>
         </div>

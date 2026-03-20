@@ -14,17 +14,17 @@ const Review = () => {
         {/* Section Title */}
         <div className="max-w-xl px-6 lg:px-24 mb-12">
           <div className="flex flex-col items-start gap-2">
-            <Typography variant="h1" className="text-white text-6xl font-bold">
-              CLIENT&apos;S
-            </Typography>
+              <Typography variant="h1" className="text-white text-6xl font-bold">
+                CLIENT
+              </Typography>
             <div className="flex flex-row gap-2 items-center">
               <img src="/images/line.png" alt="line" className="w-[80px]" />
-              <Typography
-                variant="h1"
-                className="text-white text-6xl font-bold"
-              >
-                WORD
-              </Typography>
+                <Typography
+                  variant="h1"
+                  className="text-white text-6xl font-bold"
+                >
+                  FEEDBACK
+                </Typography>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Review = () => {
         {/* Footer Text */}
         <div className="text-center mt-16 flex flex-col items-center gap-6">
           <Typography variant="h3" className="text-white">
-            Together, We create something extraordinary!
+            Let&apos;s build AI-native products that ship fast and scale well.
           </Typography>
 
           <div className="bg-white/10 backdrop-blur-md justify-start  border border-gray-700 px-4 py-1 ">
@@ -81,7 +81,7 @@ const Review = () => {
                 variant="smallText"
                 className="font-normal text-white"
               >
-                Get started
+                Build with me
               </Typography>
               <div className="bg-red-500 p-3">
                 <FaArrowRight />{" "}

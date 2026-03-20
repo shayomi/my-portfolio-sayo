@@ -36,14 +36,14 @@ const Contact = () => {
           variant="h2"
           className="mt-12 text-[24px] sm:text-[38px] md:text-[42px] text-white"
         >
-          I&apos;m positive you want to work me
+          Need a modern product stack with AI workflows and automation?
         </Typography>
         <div className="mt-6 relative">
           <h1
             className="text-white text-center font-bold text-[50px] sm:text-[70px] md:text-[100px] lg:text-[130px] xl:text-[180px] tracking-tighter cursor-pointer relative"
             onClick={handleGetInTouchClick}
           >
-            GET IN TOUCH
+            LET&apos;S BUILD
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: slide ? "100%" : 0 }}
