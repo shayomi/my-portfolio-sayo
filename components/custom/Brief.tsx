@@ -40,11 +40,13 @@ const Brief = () => {
           >
             <h1 className="background-text flex justify-end mb-6">03-06</h1>
             <Typography variant="h2">
-              Over the last five years, I have helped teams ship modern software
-              systems powered by strong product engineering and AI execution.
+              I work as an embedded partner, not just a pair of hands — turning
+              rough ideas into shipped, tested products.
               <span className="text-gray-500">
-                I design, build, test, and automate end-to-end platforms that
-                scale from MVP to production.
+                {" "}
+                From architecture and AI workflows to data, testing, and
+                release, I own the details that keep teams moving fast without
+                breaking what already works.
               </span>{" "}
             </Typography>
 

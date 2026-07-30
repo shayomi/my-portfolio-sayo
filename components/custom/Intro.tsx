@@ -45,7 +45,8 @@ const Intro = () => {
             whileHover={{ scale: 1.1 }}
             transition={transition1}
           >
-            I&apos;m Sayo, an AI-native full-stack engineer
+            I&apos;m Sayo — an AI-native full-stack engineer building products
+            that take founders from idea to scale
           </motion.h2>
         </motion.div>
       </div>

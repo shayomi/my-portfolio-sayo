@@ -41,20 +41,24 @@ const About = () => {
               ABOUT ME
             </h1>
             <Typography variant="p" className="text-white text-start ">
-              I have worked across product teams and founder-led companies,
-              building modern web platforms with Next.js, TypeScript, Tailwind,
-              and scalable backend integrations.
+              I&apos;m a full-stack engineer and AI automation specialist with
+              5+ years building and scaling AI-native web applications. I&apos;ve
+              shipped fintech, venture, and founder-facing platforms across
+              product teams and founder-led companies — including SaveTown and a
+              VC portal at Future Africa where AI automations cut investor
+              onboarding time by 40%.
             </Typography>
             <Typography variant="p" className="text-white text-start ">
-              Today, my stack is AI-native: OpenCode and Claude Code workflows,
-              agent and subagent orchestration with OpenClaw, automated browser
-              quality checks with Playwright, and production monitoring with
-              Sentry.
+              Today my stack is AI-native: Next.js and TypeScript on the front,
+              Supabase-backed data, auth, and realtime on the back, and agent
+              workflows with OpenCode, Claude Code, and OpenClaw orchestration
+              driving the automation in between.
             </Typography>
             <Typography variant="p" className="text-white text-start ">
-              I also build on Supabase for data, auth, and realtime features,
-              while creating reusable open-source packages and internal tooling
-              that help teams ship faster with confidence.
+              I ship with confidence — Playwright browser testing, Sentry
+              production monitoring, and CI/CD pipelines — and build reusable
+              packages and internal tooling that help founders and product teams
+              move from early stage to full establishment, faster.
             </Typography>
           </motion.div>
         </motion.div>

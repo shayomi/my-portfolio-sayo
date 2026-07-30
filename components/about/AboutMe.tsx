@@ -46,14 +46,17 @@ const AboutMe = () => {
 
           <div className="flex flex-col gap-4  w-full md:w-[50%]">
             <Typography variant="h6" className="text-white font-normal">
-              What started as frontend development evolved into a full-stack,
-              AI-native engineering practice focused on shipping real products.
-              I build with Next.js, agent workflows, and production automation
-              to help teams execute faster without sacrificing quality.{" "}
+              What started as frontend development has, over 5+ years, evolved
+              into a full-stack, AI-native engineering practice focused on
+              shipping real products — from fintech and venture platforms to
+              end-to-end startup ecosystems that carry founders from idea to
+              scale. I build with Next.js, agent workflows, and production
+              automation to help teams execute faster without sacrificing
+              quality.{" "}
               <span className="text-gray-300">
                 My work spans OpenCode and Claude Code agent setups, OpenClaw
                 orchestration, Playwright browser testing, Sentry observability,
-                and Supabase-backed data systems.
+                and Supabase-backed data, auth, and realtime systems.
               </span>
             </Typography>
             <div className="flex flex-col gap-8 items-start">

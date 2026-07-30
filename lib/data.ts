@@ -61,12 +61,12 @@ export const portfolioData = [
   },
   {
     icon: "/images/accelerate-africa.png",
-    title: "Accelerate Africa ",
-    tags: "Agentic Founder Platform",
+    title: "Coach ",
+    tags: "Startup Ecosystem Platform",
     website: "http://acceler8.africa",
     github: "https://github.com/shayomi/accelerate-website-develop",
     description:
-      "Accelerate Africa is now an agentic platform for founders and coaches, enabling structured mentoring, weekly submissions, and story mapping with automated workflows, observability, and reliable data infrastructure.",
+      "Coach is an end-to-end startup ecosystem platform that takes founders from early stage to full establishment and $1M ARR, combining agentic coaching with business registration (CAC), licensing, visa support, a service-provider marketplace, and a dedicated investor portal.",
   },
   {
     icon: "/images/capitalstatefarm.png",

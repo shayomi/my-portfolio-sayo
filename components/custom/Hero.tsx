@@ -41,10 +41,13 @@ const VideoIntro = () => {
 
         <div className="flex flex-col gap-4 items-start">
           <Typography
-            variant="h2"
-            className="font-bold text-white max-w-[700px] leading-[64px] text-start"
+            variant="h4"
+            className="font-bold text-white max-w-[700px] text-[18px] md:text-[26px] leading-[26px] md:leading-[34px] text-start"
           >
-            Building AI-native products with Next.js, agents, and automation.
+            Over the last five years, I have helped teams ship modern software
+            systems powered by strong product engineering and AI execution. I
+            design, build, test, and automate end-to-end platforms that scale
+            from MVP to production.
           </Typography>
 
           <Typography
@@ -70,7 +73,7 @@ const VideoIntro = () => {
             </Link>
           </div>
           <div>
-            <div className="flex flex-col gap-3 items-start mt-24 mb-6">
+            <div className="flex flex-col gap-3 items-start mt-8 md:mt-12 mb-6">
               <Typography variant="h3" className="font-medium text-white">
                 Trusted By:
               </Typography>

@@ -1,19 +1,19 @@
 export const projects = [
   {
     id: 1,
-    name: "Accelerate Africa",
-    category: "Agentic Founder Coaching Platform",
+    name: "Coach",
+    category: "End-to-End Startup Ecosystem Platform",
     year: "2026",
     image: "/images/vc.webp",
     website: "http://acceler8.africa",
     github: "https://github.com/shayomi/accelerate-website-develop",
-    slug: "accelerate-africa",
+    slug: "coach",
     problem:
-      "Founders needed a consistent way to get high-quality coaching, submit weekly progress updates, and map their startup story over time, while coaches needed better visibility, structure, and accountability tools to mentor effectively.",
+      "Founders lose momentum because the journey from idea to a real, fundable company is fragmented across dozens of disconnected tools and providers. They need coaching in one place, business registration (CAC) and licensing somewhere else, visa and immigration help through another channel, and investors and vendors nowhere near their day-to-day workflow. There was no single environment that could take a founder from early stage all the way to full establishment and $1M ARR.",
     approach:
-      "I evolved Accelerate Africa into an agentic platform where workflows are assisted by OpenCode and Claude Code agents. The system supports coach-founder collaboration loops for weekly submissions, feedback cycles, and story mapping. Browser-level quality checks were automated with Playwright, OpenClaw was integrated for autonomous orchestration, Sentry handled production monitoring, and Supabase powered structured data, auth flows, and realtime updates.",
+      "I built Coach as an end-to-end startup ecosystem platform that unifies every actor in one place. Founders get agentic coaching, an onboarding questionnaire, a mentor directory, milestone tracking, AI analysis, and metrics and results dashboards, plus built-in access to the operational milestones that make a company real: business licence and company registration (CAC), compliance and regulatory filings, and visa and immigration support. A service-provider marketplace lets vetted legal, accounting, and operations partners plug directly into founder workflows, while a dedicated investor portal gives investors structured visibility into founder progress, traction, and deal flow. Workflows are assisted by OpenCode and Claude Code agents, browser-level quality checks were automated with Playwright, OpenClaw handled autonomous orchestration, Sentry covered production monitoring, and Supabase powered structured data, auth, role-based access, and realtime updates across founders, coaches, providers, and investors.",
     result:
-      "The platform now delivers a more actionable mentoring experience: founders get clearer momentum tracking and strategic guidance, while coaches get operational leverage through agent-assisted workflows, better visibility, and a measurable weekly execution rhythm.",
+      "Coach turns a scattered startup journey into a single, guided path from early stage to full establishment. Founders can incorporate, stay compliant, sort immigration, get coached, hit milestones, and connect with the right service providers and investors, all in one platform, with a measurable execution rhythm aimed squarely at reaching $1M ARR, while coaches, providers, and investors each get purpose-built views into the same ecosystem.",
     techStack: [
       "Next.js",
       "OpenCode",
@@ -28,6 +28,82 @@ export const projects = [
       "/images/vision-capital/2.jpg",
       "/images/vision-capital/3.jpg",
       "/images/vision-capital/4.jpg",
+    ],
+  },
+  {
+    id: 5,
+    name: "Orion",
+    category: "AI Legal Platform for Founders",
+    year: "2026",
+    image: "/images/orion.jpg",
+    website: "https://orionadvisorylimited.com",
+    github: "",
+    slug: "orion",
+    problem:
+      "Early-stage founders routinely make high-stakes legal decisions without affordable guidance. They can't tell which issues are urgent, when a template is safe to use, or when they genuinely need a lawyer, so risks around structure, IP, and contracts go unnoticed until they become expensive.",
+    approach:
+      "I built Orion around a single founder journey: sign up, complete a guided legal health check, see prioritised issues, ask an AI assistant to explain them, then generate a document or request expert help. Each issue maps to one of three resolution paths, self-serve guidance, document generation, or a human expert referral. A context-aware AI chatbot is linked to the startup profile and assessment results with built-in disclaimers and escalation for high-risk matters, backed by a document generator for NDAs, founder agreements, contractor agreements, and IP assignments.",
+    result:
+      "Founders can complete the health check unaided, understand their real legal exposure, and take a concrete next step, whether that is generating a document or escalating to an expert, turning scattered, intimidating legal questions into a structured, auditable readiness workflow.",
+    techStack: ["Next.js", "TypeScript", "Drizzle ORM", "AI / LLM", "Tailwind CSS"],
+    gallery: [
+      "/images/orion/1.jpg",
+      "/images/orion/2.jpg",
+      "/images/orion/3.jpg",
+      "/images/orion/4.jpg",
+    ],
+  },
+  {
+    id: 6,
+    name: "Capita-Lens",
+    category: "Capital Readiness SaaS for SMEs",
+    year: "2026",
+    image: "/images/capita-lens.png",
+    website: "https://capita-lens.com",
+    github: "",
+    slug: "capita-lens",
+    problem:
+      "Most SMEs apply for funding without understanding how lenders actually assess them. They assume a good credit score and healthy statements are enough, while lenders weigh a much broader mix of financial, operational, governance, and compliance factors, so businesses get rejected without knowing why.",
+    approach:
+      "I built Capita-Lens as a cloud SaaS platform for continuous self-due diligence. Businesses assess themselves against the broad range of factors commonly considered in commercial funding decisions, going beyond a single credit indicator to a holistic view of capital readiness. The platform surfaces weaknesses, highlights evidence gaps, and guides businesses to close them before submitting a funding application, without ever promising approval.",
+    result:
+      "SMEs get a clear, honest picture of where they stand, a prioritised list of gaps to close, and a structured path to improve readiness before approaching lenders or investors, replacing guesswork with a repeatable diligence process.",
+    techStack: ["Next.js", "TypeScript", "SaaS", "Tailwind CSS", "Supabase"],
+    gallery: [
+      "/images/capita-lens/1.jpg",
+      "/images/capita-lens/2.jpg",
+      "/images/capita-lens/3.jpg",
+      "/images/capita-lens/4.jpg",
+    ],
+  },
+  {
+    id: 7,
+    name: "Renuir",
+    category: "B2B Lost & Found Recovery Platform",
+    year: "2026",
+    image: "/images/renuir.jpg",
+    website: "https://renuir.com",
+    github: "",
+    slug: "renuir",
+    problem:
+      "Traditional lost-and-found is chaotic and unauditable. Hotels, airports, restaurants, and institutions have no reliable way to log found items, match them to the people who lost them, and return them securely, which erodes trust and wastes staff time.",
+    approach:
+      "I built Renuir as a modern B2B recovery platform that connects people who have lost items with verified venues through smart matching and secure returns. It serves three audiences, individuals recovering items, businesses managing found inventory, and developers integrating via the Renuir API. The web platform was built with Next.js 16 App Router, TypeScript in strict mode, Tailwind CSS v4 and shadcn/ui, with Framer Motion for motion and react-hook-form plus Zod for validated intake flows.",
+    result:
+      "Renuir replaces disorganised lost-and-found processes with an intelligent, auditable recovery system, giving venues operational control and individuals a trustworthy, verifiable path back to their belongings.",
+    techStack: [
+      "Next.js 16",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "shadcn/ui",
+      "Framer Motion",
+      "Zod",
+    ],
+    gallery: [
+      "/images/renuir/1.jpg",
+      "/images/renuir/2.jpg",
+      "/images/renuir/3.jpg",
+      "/images/renuir/4.jpg",
     ],
   },
   {

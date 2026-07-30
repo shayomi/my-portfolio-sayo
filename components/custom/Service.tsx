@@ -24,22 +24,29 @@ const services = [
     id: "[03]",
     title: "AI Workflow and Automation Design",
     details:
-      "/ Task decomposition / Agent handoff patterns / Team-ready execution playbooks",
+      "/ Task decomposition / Agent handoff patterns / Process automation / Team-ready execution playbooks",
     image: "/images/uiux.jpg",
   },
   {
     id: "[04]",
     title: "Quality, Testing, and Reliability",
     details:
-      "/ Playwright browser testing / Regression automation / Sentry monitoring / Release confidence",
+      "/ Playwright browser testing / Regression automation / Sentry monitoring / CI/CD release confidence",
     image: "/images/strategy.jpg",
   },
   {
     id: "[05]",
-    title: "Open Source and Package Development",
+    title: "Data, Auth, and Backend Systems",
     details:
-      "/ Internal tooling / Reusable packages / Developer experience / Documentation systems",
+      "/ Supabase & PostgreSQL / Auth & role-based access / Realtime data / API and CMS integration",
     image: "/images/nocode.jpg",
+  },
+  {
+    id: "[06]",
+    title: "End-to-End Platform and Ecosystem Builds",
+    details:
+      "/ Founder-to-scale platforms / Marketplaces & investor portals / Fintech & compliance flows / Reusable open-source tooling",
+    image: "/images/webdev.png",
   },
 ];
 
