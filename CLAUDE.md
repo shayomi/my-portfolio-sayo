@@ -21,37 +21,36 @@ Next.js 14 App Router portfolio site. Styling uses Tailwind CSS + SCSS (`app/glo
 
 All content is static TypeScript — no CMS, no API calls.
 
-**`lib/projectData.ts`** — Case-study projects (detail pages + home Selected Works)
-- Powers `/work`, `/work/[slug]`, and the home page Selected Works section
-- `components/custom/SelectedWorks/` uses `projects.slice(0, 5)` by position — entry 1 is the full-width featured card, entries 2–5 fill the 2×2 grid. Order matters.
+**`lib/projectData.ts`** — Case-study projects (home Work grid + zoom overlay)
+- Every entry renders in `components/home/work/`; clicking a card expands it (framer-motion `layoutId`) into a full-screen case study at `/?p=<slug>`
+- Order matters: entry 1 is the full-width featured card; grid spans per position live in `CARD_LAYOUT` in `components/home/work/types.ts`
 - Each entry needs: `id`, `name`, `category`, `year`, `image`, `website`, `github`, `slug`, `problem`, `approach`, `result`, `techStack[]`, `gallery[]`
-- `slug` must be unique, lowercase kebab-case (becomes the URL `/work/<slug>`)
+- `slug` must be unique, lowercase kebab-case (becomes `/?p=<slug>`; old `/work/<slug>` links redirect there via `next.config.mjs`)
 
-**`lib/data.ts`** — Portfolio grid items (home page filterable tabs, no detail pages)
-- `portfolioData` → "Website Portfolio" tab (`Portfolio.tsx`)
-- `UIUXData` → "UI/UX / Design" tab
-- Items link directly to external URLs; they have no individual case-study pages
+**`lib/siteData.ts`** — Home copy: stats, stack marquee, capabilities graph nodes, experience, contact email
+
+**`lib/data.ts`** — `reviewData` (testimonials) and `socialData` (contact icons) are used by the home page; `portfolioData`/`UIUXData` are currently unused
 
 ### Image Conventions
 
 - All images live in `public/images/`, referenced as `/images/filename.ext`
 - The codebase uses native `<img>` tags, not `next/image`
-- Gallery images for project detail pages: `/images/project-name/1.jpg`, etc.
+- `gallery[]` paths in projectData are not rendered anywhere yet (most files do not exist)
 
 ### Routing
 
 | Route | Component | Data source |
 |---|---|---|
-| `/` | `app/page.tsx` | `lib/data.ts`, `lib/projectData.ts` |
-| `/work` | `components/project/MyWorks.tsx` | `lib/projectData.ts` |
-| `/work/[slug]` | `app/work/[slug]/page.tsx` | `lib/projectData.ts` (matched by `slug`) |
+| `/` | `components/home/` (single page, sections in domain folders) | `lib/projectData.ts`, `lib/siteData.ts`, `lib/data.ts` |
 | `/blog` | `components/blog/Blogs.tsx` | `components/blog/BlogData.ts` |
 | `/blog/[slug]` | `app/blog/[slug]/page.tsx` | `components/blog/BlogData.ts` |
-| `/about` | `components/about/AboutMe.tsx` | static |
+
+`/work`, `/work/<slug>` and `/about` are redirects (see `next.config.mjs`). The blog keeps its own layout and old footer (`app/blog/layout.tsx`).
+
+Home design tokens (Tailwind): `ink`, `coal`, `cream`, `bone`, `ember`; fonts `font-display` (Anton), `font-serif` (Instrument Serif), `font-sans` (Inter). Shared motion easing/timings are in `components/home/ui/motion.ts`.
 
 ### Adding or Removing a Project
 
-1. Edit `lib/projectData.ts` — add/remove the entry (keep the 5 most important projects first)
-2. If it should also appear in the home portfolio grid, edit `lib/data.ts`
-3. Place images in `public/images/`
-4. Run `pnpm build` to catch TypeScript errors, then verify manually with `pnpm dev`
+1. Edit `lib/projectData.ts` — add/remove the entry (the first entry is the featured card)
+2. Place images in `public/images/`
+3. Run `pnpm build` to catch TypeScript errors, then verify manually with `pnpm dev`

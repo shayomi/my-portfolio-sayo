@@ -1,16 +1,11 @@
 import type { Metadata, Viewport } from "next";
 
 import "./globals.scss";
-import { kodchasan } from "./font";
-
-import Footer from "@/components/shared/Footer";
-import Header from "@/components/shared/Header";
+import { kodchasan, display, serif, sans } from "./font";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export const metadata: Metadata = {
@@ -61,16 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-black w-full mx-auto">
-      <body className={kodchasan.className}>
-        <div className="w-full  bg-black mx-auto overflow-hidden">
-          {/* <Header /> */}
-
-          <main className="mx-auto w-full">{children}</main>
-
-          <Footer />
-        </div>
-      </body>
+    <html
+      lang="en"
+      className={`bg-ink w-full mx-auto ${display.variable} ${serif.variable} ${sans.variable}`}
+    >
+      <body className={kodchasan.className}>{children}</body>
     </html>
   );
 }

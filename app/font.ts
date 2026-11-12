@@ -1,3 +1,4 @@
+import { Anton, Instrument_Serif, Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 export const kodchasan = localFont({
@@ -23,4 +24,26 @@ export const kodchasan = localFont({
       style: "bold",
     },
   ],
+});
+
+export const display = Anton({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
+  display: "swap",
+});
+
+export const serif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  adjustFontFallback: false,
+  variable: "--font-serif",
+  display: "swap",
+});
+
+export const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
 });

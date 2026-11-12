@@ -190,3 +190,30 @@
     border-radius: 8px;
   }
 }
+
+/* ── Home revamp ─────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-outline-bone {
+    color: transparent;
+    -webkit-text-stroke: 1px #f7f4ef;
+  }
+  @media (min-width: 768px) {
+    .text-outline-bone {
+      -webkit-text-stroke: 2px #f7f4ef;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-spin-slow,
+  .animate-ping {
+    animation: none;
+  }
+}

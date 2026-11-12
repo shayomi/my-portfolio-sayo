@@ -247,8 +247,8 @@ export const ContactData = [
   {
     icon: "/images/mail.svg",
     title: "Email for projects",
-    description: "adegoroyesayotosin@gmail.com",
-    link: "https://mailto:adegoroyesayotosin@gmail.com",
+    description: "adegoroyesayo@gmail.com",
+    link: "mailto:adegoroyesayo@gmail.com",
   },
 ];
 
