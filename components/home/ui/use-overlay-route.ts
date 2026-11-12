@@ -2,32 +2,34 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-const PARAM = "p";
-
 /**
- * Keeps the open project in the URL (`/?p=slug`) so case studies are
- * shareable and the browser back button closes the overlay.
+ * Keeps the open overlay in the URL (`?<param>=slug`) so it is shareable and
+ * the browser back button closes it. Used by project case studies (`p`) and
+ * blog posts (`post`).
  */
-export function useProjectRoute(slugs: string[]) {
+export function useOverlayRoute(slugs: string[], param: string) {
   const [active, setActive] = useState<string | null>(null);
 
   useEffect(() => {
     const read = () => {
-      const slug = new URLSearchParams(window.location.search).get(PARAM);
+      const slug = new URLSearchParams(window.location.search).get(param);
       setActive(slug && slugs.includes(slug) ? slug : null);
     };
     read();
     window.addEventListener("popstate", read);
     return () => window.removeEventListener("popstate", read);
-  }, [slugs]);
+  }, [slugs, param]);
 
-  const open = useCallback((slug: string) => {
-    window.history.pushState({ project: slug }, "", `?${PARAM}=${slug}`);
-    setActive(slug);
-  }, []);
+  const open = useCallback(
+    (slug: string) => {
+      window.history.pushState({ overlay: slug }, "", `?${param}=${slug}`);
+      setActive(slug);
+    },
+    [param],
+  );
 
   const close = useCallback(() => {
-    if (window.history.state?.project) {
+    if (window.history.state?.overlay) {
       // Opened from the grid: step back so Back/Forward stay intuitive.
       window.history.back();
     } else {

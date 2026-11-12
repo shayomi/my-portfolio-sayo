@@ -9,10 +9,10 @@ import RevealText from "../ui/RevealText";
 import SectionLabel from "../ui/SectionLabel";
 import CopyEmail from "./CopyEmail";
 
-export default function Contact() {
+export default function Contact({ index = "06" }: { index?: string }) {
   return (
     <footer id="contact" className="relative overflow-hidden bg-ember px-5 pt-28 text-ink md:px-10 md:pt-40">
-      <SectionLabel index="06" label="Contact" className="mb-8 text-ink/70" />
+      <SectionLabel index={index} label="Contact" className="mb-8 text-ink/70" />
       <h2 className="font-display uppercase leading-[0.82] text-[24vw] md:text-[17vw]">
         <RevealText text="Let's" />
         <br />

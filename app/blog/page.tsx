@@ -1,16 +1,11 @@
-import AboutHeader from "@/components/about/AboutHeader";
-import AboutMe from "@/components/about/AboutMe";
-import BlogHeader from "@/components/blog/BlogHeader";
-import Blogs from "@/components/blog/Blogs";
-import React from "react";
+import type { Metadata } from "next";
+import BlogPage from "@/components/blog";
 
-const page = () => {
-  return (
-    <div>
-      <BlogHeader />
-      <Blogs />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: "Writing",
+  description: "Notes on AI workflows, agent systems, and shipping production software.",
 };
 
-export default page;
+export default function Page() {
+  return <BlogPage />;
+}

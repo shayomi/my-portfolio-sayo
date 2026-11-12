@@ -49,7 +49,7 @@ export const blogListData = [
     date: "March 20, 2026",
     title: "Venture Building as a Service: From Idea to Execution Rhythm",
     slug: "venture-building-as-a-service-from-idea-to-execution-rhythm",
-    image: "/images/blog4.png",
+    image: "/images/blog4.jpg",
     paragraph1:
       "Many startups fail before product-market fit not because founders lack ideas, but because execution systems are weak. Venture Building as a Service solves this by combining strategy, product engineering, and operational cadence into one managed lane. It gives founders a practical engine for momentum instead of fragmented advisory sessions and disconnected freelancers.",
     paragraph2:
@@ -64,7 +64,7 @@ export const blogListData = [
     date: "March 20, 2026",
     title: "Automation First Teams: Replacing Busywork with Output",
     slug: "automation-first-teams-replacing-busywork-with-output",
-    image: "/images/blog5.png",
+    image: "/images/blog5.webp",
     paragraph1:
       "Software teams rarely fail because they are lazy; they fail because they are overloaded with operational friction. Status reporting, repeated QA steps, changelog writing, release coordination, and incident triage often consume the same energy needed for actual product development. Automation-first teams treat this friction as a product problem and systematically remove it.",
     paragraph2:
@@ -79,7 +79,7 @@ export const blogListData = [
     date: "March 20, 2026",
     title: "How to Design Agent Roles That Actually Scale",
     slug: "how-to-design-agent-roles-that-actually-scale",
-    image: "/images/blog6.png",
+    image: "/images/blog6.jpg",
     paragraph1:
       "A common mistake in AI adoption is using one giant general-purpose agent for everything. It feels efficient at first, but quickly becomes fragile as codebases grow and tasks become cross-functional. Scalable systems rely on role specialization, just like high-performing product teams.",
     paragraph2:
@@ -94,7 +94,7 @@ export const blogListData = [
     date: "March 20, 2026",
     title: "Building AI Features Without Killing Product Focus",
     slug: "building-ai-features-without-killing-product-focus",
-    image: "/images/blog4.png",
+    image: "/images/blog7.jpg",
     paragraph1:
       "AI feature roadmaps can become noisy very quickly. Teams chase capabilities because they are impressive, not because they solve a painful workflow for users. The result is bloat: more features, less value. Product focus starts by identifying one expensive user problem and designing AI as an accelerator for that path.",
     paragraph2:
@@ -109,7 +109,7 @@ export const blogListData = [
     date: "March 20, 2026",
     title: "Package-Driven Engineering: Why Reusable Tools Win",
     slug: "package-driven-engineering-why-reusable-tools-win",
-    image: "/images/blog5.png",
+    image: "/images/blog8.png",
     paragraph1:
       "As teams mature, the same workflows appear across projects: auth adapters, logging contracts, design tokens, test fixtures, and deployment scripts. Rebuilding these from scratch wastes time and creates inconsistency. Package-driven engineering converts repeated patterns into reusable assets that improve every future build.",
     paragraph2:
@@ -124,7 +124,7 @@ export const blogListData = [
     date: "March 20, 2026",
     title: "The AI Delivery Loop: Plan, Build, Test, Observe, Improve",
     slug: "the-ai-delivery-loop-plan-build-test-observe-improve",
-    image: "/images/blog6.png",
+    image: "/images/blog9.webp",
     paragraph1:
       "High-performing teams think in loops, not milestones. Milestones are useful for communication, but loops are what improve product quality over time. In AI-assisted engineering, the most effective loop is simple: plan clearly, build with scoped execution, test critical paths, observe production behavior, and feed insights back into the next cycle.",
     paragraph2:

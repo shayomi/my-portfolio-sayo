@@ -8,12 +8,12 @@ import SectionLabel from "../ui/SectionLabel";
 import ProjectCard from "./ProjectCard";
 import ProjectOverlay from "./ProjectOverlay";
 import { CARD_LAYOUT, DEFAULT_CARD_LAYOUT } from "./types";
-import { useProjectRoute } from "./use-project-route";
-import { useScrollLock } from "./use-scroll-lock";
+import { useOverlayRoute } from "../ui/use-overlay-route";
+import { useScrollLock } from "../ui/use-scroll-lock";
 
 export default function Work() {
   const slugs = useMemo(() => projects.map((p) => p.slug), []);
-  const { active, open, close } = useProjectRoute(slugs);
+  const { active, open, close } = useOverlayRoute(slugs, "p");
   // The last-opened card stays raised while it animates back into the grid.
   const [raised, setRaised] = useState<string | null>(null);
   const nextTimer = useRef<ReturnType<typeof setTimeout>>();

@@ -42,10 +42,11 @@ All content is static TypeScript — no CMS, no API calls.
 | Route | Component | Data source |
 |---|---|---|
 | `/` | `components/home/` (single page, sections in domain folders) | `lib/projectData.ts`, `lib/siteData.ts`, `lib/data.ts` |
-| `/blog` | `components/blog/Blogs.tsx` | `components/blog/BlogData.ts` |
-| `/blog/[slug]` | `app/blog/[slug]/page.tsx` | `components/blog/BlogData.ts` |
+| `/blog` | `components/blog/` (shares the home Nav, Contact footer, Cursor) | `components/blog/BlogData.ts` |
 
-`/work`, `/work/<slug>` and `/about` are redirects (see `next.config.mjs`). The blog keeps its own layout and old footer (`app/blog/layout.tsx`).
+Blog posts open as a zoom overlay at `/blog?post=<slug>` (same pattern as projects; the shared URL hook is `components/home/ui/use-overlay-route.ts`). The first post in `BlogData.ts` is the large "Latest" card.
+
+`/work`, `/work/<slug>`, `/about` and `/blog/<slug>` are redirects (see `next.config.mjs`).
 
 Home design tokens (Tailwind): `ink`, `coal`, `cream`, `bone`, `ember`; fonts `font-display` (Anton), `font-serif` (Instrument Serif), `font-sans` (Inter). Shared motion easing/timings are in `components/home/ui/motion.ts`.
 
