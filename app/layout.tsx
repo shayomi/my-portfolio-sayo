@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://adegoroyesayo.vercel.app/"),
   title: {
-    default: "Sayo Adegoroye | Full-Stack AI Engineer",
+    default: "Sayo Adegoroye | AI Software Engineer",
     template: "%s | Sayo Adegoroye",
   },
   description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Adegoroye Sayo" }],
   openGraph: {
-    title: "Sayo Adegoroye | Full-Stack AI Engineer",
+    title: "Sayo Adegoroye | AI Software Engineer",
     description:
       "I build modern, AI-native platforms with Next.js, agent orchestration, browser automation, and production-grade data and observability stacks.",
     type: "website",

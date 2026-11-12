@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { EASE, INTRO_DELAY } from "../ui/motion";
 
-const LINES = ["AI Product", "Engineer"];
+const LINES = ["AI Software", "Engineer"];
 
 /**
  * The hero headline. Rendered twice with identical geometry: a solid layer

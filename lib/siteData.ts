@@ -5,7 +5,7 @@ export const EMAIL = "adegoroyesayo@gmail.com";
 export const WHATSAPP = "https://wa.link/37lp8a";
 
 export const stats = [
-  { value: 5, suffix: "+", label: "Years shipping production software" },
+  { value: 5, suffix: "+", label: "Years shipping products and AI-native platforms" },
   { value: 8, suffix: "", label: "Production case studies" },
   { value: 1500, suffix: "+", label: "Toviri waitlist, grown organically" },
   { value: 40, suffix: "%", label: "Faster investor onboarding via AI automation" },

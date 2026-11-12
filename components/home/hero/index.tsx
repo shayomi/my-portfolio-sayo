@@ -110,7 +110,7 @@ export default function Hero() {
           {...fadeUp(0.7)}
           className="hidden max-w-xs font-sans text-sm leading-relaxed text-ink/80 md:block"
         >
-          Five years shipping AI-native platforms. I design, build, test and automate
+          Five years shipping products and AI-native platforms. I design, build, test and automate
           products end to end — from first prototype to production.
         </motion.p>
         <motion.div {...fadeUp(0.8)} className="ml-auto">
