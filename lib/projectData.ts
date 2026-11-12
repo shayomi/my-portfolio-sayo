@@ -1,5 +1,31 @@
 export const projects = [
   {
+    id: 8,
+    name: "Toviri",
+    category: "AI Travel Planner with Plan-Aware Safety",
+    year: "2026",
+    image: "/images/toviri.webp",
+    website: "https://toviri.com",
+    github: "",
+    slug: "toviri",
+    problem:
+      "Travellers juggle a map, a rail app, a taxi app and a messaging app, and none of them knows the plan. Itineraries are off-the-shelf, plans break constantly (4.1% of GB rail services were cancelled in a single quarter), and when a late-night train is cancelled the traveller is on their own. Women, newcomers and international students navigating an unfamiliar city and transport system are the most exposed.",
+    approach:
+      "As Founding Engineer and CTO, I architected and built Toviri's core platform and AI from the ground up. An AI time-based itinerary engine sequences places around a traveller's available time, budget, reason for travelling and needs (step-free routes, well-lit streets), timed to real departure times. A transport intelligence layer pulls live train, bus and Underground times with one-tap Uber handoff, while a local knowledge layer combines curated places with community safety reports. A safety and support system lets travellers share their live journey with people they trust and raise one-tap alerts, and the plan-recovery engine is being built to find the safest alternative when a plan breaks. I lead engineering, AI, infrastructure and security, with the platform designed so the same engine scales to new cities with local partners.",
+    result:
+      "Toviri is live as a UK travel planner with live transport and journey sharing, launching across the UK and Nigeria. It has grown a 1,500+ organic waitlist, is supported by the UWE Bristol Incubator, was awarded AWS Activate credits, and was featured in Vanguard, The Nation and The Guardian Nigeria.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "AI / LLM",
+      "Live Transport APIs",
+      "Uber API",
+      "AWS",
+      "Tailwind CSS",
+    ],
+    gallery: ["/images/toviri.webp"],
+  },
+  {
     id: 1,
     name: "Coach",
     category: "End-to-End Startup Ecosystem Platform",
@@ -45,7 +71,13 @@ export const projects = [
       "I built Orion around a single founder journey: sign up, complete a guided legal health check, see prioritised issues, ask an AI assistant to explain them, then generate a document or request expert help. Each issue maps to one of three resolution paths, self-serve guidance, document generation, or a human expert referral. A context-aware AI chatbot is linked to the startup profile and assessment results with built-in disclaimers and escalation for high-risk matters, backed by a document generator for NDAs, founder agreements, contractor agreements, and IP assignments.",
     result:
       "Founders can complete the health check unaided, understand their real legal exposure, and take a concrete next step, whether that is generating a document or escalating to an expert, turning scattered, intimidating legal questions into a structured, auditable readiness workflow.",
-    techStack: ["Next.js", "TypeScript", "Drizzle ORM", "AI / LLM", "Tailwind CSS"],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Drizzle ORM",
+      "AI / LLM",
+      "Tailwind CSS",
+    ],
     gallery: [
       "/images/orion/1.jpg",
       "/images/orion/2.jpg",
@@ -55,11 +87,11 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Capita-Lens",
+    name: "Sadora Lens",
     category: "Capital Readiness SaaS for SMEs",
     year: "2026",
     image: "/images/capita-lens.png",
-    website: "https://capita-lens.com",
+    website: "https://www.sadora-lens.com/",
     github: "",
     slug: "capita-lens",
     problem:
@@ -175,5 +207,4 @@ export const projects = [
       "/images/nimble-media/4.jpg",
     ],
   },
-
 ];

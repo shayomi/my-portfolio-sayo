@@ -23,7 +23,7 @@ All content is static TypeScript — no CMS, no API calls.
 
 **`lib/projectData.ts`** — Case-study projects (detail pages + home Selected Works)
 - Powers `/work`, `/work/[slug]`, and the home page Selected Works section
-- `SelectedWorks.tsx` hard-indexes `projects.slice(0, 4)` by position — the first 4 array entries map to specific card positions on the home page. Order matters.
+- `components/custom/SelectedWorks/` uses `projects.slice(0, 5)` by position — entry 1 is the full-width featured card, entries 2–5 fill the 2×2 grid. Order matters.
 - Each entry needs: `id`, `name`, `category`, `year`, `image`, `website`, `github`, `slug`, `problem`, `approach`, `result`, `techStack[]`, `gallery[]`
 - `slug` must be unique, lowercase kebab-case (becomes the URL `/work/<slug>`)
 
@@ -51,7 +51,7 @@ All content is static TypeScript — no CMS, no API calls.
 
 ### Adding or Removing a Project
 
-1. Edit `lib/projectData.ts` — add/remove the entry (keep the 4 most important projects first)
+1. Edit `lib/projectData.ts` — add/remove the entry (keep the 5 most important projects first)
 2. If it should also appear in the home portfolio grid, edit `lib/data.ts`
 3. Place images in `public/images/`
 4. Run `pnpm build` to catch TypeScript errors, then verify manually with `pnpm dev`
